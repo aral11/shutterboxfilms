@@ -9,120 +9,120 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 45 20% 96%;
-    --foreground: 30 15% 15%;
+    --background: 210 100% 98%;
+    --foreground: 220 20% 15%;
 
-    --card: 45 25% 98%;
-    --card-foreground: 30 15% 15%;
+    --card: 210 100% 99%;
+    --card-foreground: 220 20% 15%;
 
-    --popover: 45 25% 98%;
-    --popover-foreground: 30 15% 15%;
+    --popover: 210 100% 99%;
+    --popover-foreground: 220 20% 15%;
 
-    --primary: 30 45% 25%;
-    --primary-foreground: 45 20% 96%;
+    --primary: 200 95% 45%;
+    --primary-foreground: 210 100% 98%;
 
-    --secondary: 140 25% 85%;
-    --secondary-foreground: 30 45% 25%;
+    --secondary: 210 80% 90%;
+    --secondary-foreground: 200 95% 45%;
 
-    --muted: 140 20% 90%;
-    --muted-foreground: 30 25% 45%;
+    --muted: 210 70% 95%;
+    --muted-foreground: 220 15% 55%;
 
-    --accent: 25 75% 65%;
-    --accent-foreground: 30 15% 15%;
+    --accent: 35 95% 65%;
+    --accent-foreground: 220 20% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 140 20% 85%;
-    --input: 140 20% 85%;
-    --ring: 30 45% 25%;
+    --border: 210 70% 85%;
+    --input: 210 70% 85%;
+    --ring: 200 95% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 45 20% 96%;
-    --sidebar-foreground: 30 15% 15%;
-    --sidebar-primary: 30 45% 25%;
-    --sidebar-primary-foreground: 45 20% 96%;
-    --sidebar-accent: 140 25% 85%;
-    --sidebar-accent-foreground: 30 45% 25%;
-    --sidebar-border: 140 20% 85%;
-    --sidebar-ring: 25 75% 65%;
+    --sidebar-background: 210 100% 98%;
+    --sidebar-foreground: 220 20% 15%;
+    --sidebar-primary: 200 95% 45%;
+    --sidebar-primary-foreground: 210 100% 98%;
+    --sidebar-accent: 210 80% 90%;
+    --sidebar-accent-foreground: 200 95% 45%;
+    --sidebar-border: 210 70% 85%;
+    --sidebar-ring: 35 95% 65%;
 
-    /* Shutterbox Films Earthy Color Palette */
-    /* Deep Browns */
-    --earth-brown-50: 30 25% 95%;
-    --earth-brown-100: 30 25% 90%;
-    --earth-brown-200: 30 25% 80%;
-    --earth-brown-300: 30 25% 70%;
-    --earth-brown-400: 30 35% 55%;
-    --earth-brown-500: 30 45% 40%;
-    --earth-brown-600: 30 45% 30%;
-    --earth-brown-700: 30 45% 25%;
-    --earth-brown-800: 30 45% 20%;
-    --earth-brown-900: 30 45% 15%;
+    /* Shutterbox Films Vibrant Theme Colors */
+    /* Vibrant Blues */
+    --vibrant-blue-50: 210 100% 98%;
+    --vibrant-blue-100: 210 95% 95%;
+    --vibrant-blue-200: 210 90% 85%;
+    --vibrant-blue-300: 210 85% 75%;
+    --vibrant-blue-400: 200 90% 65%;
+    --vibrant-blue-500: 200 95% 55%;
+    --vibrant-blue-600: 200 95% 45%;
+    --vibrant-blue-700: 200 95% 35%;
+    --vibrant-blue-800: 200 95% 25%;
+    --vibrant-blue-900: 200 95% 15%;
 
-    /* Forest Greens */
-    --earth-green-50: 140 25% 95%;
-    --earth-green-100: 140 25% 90%;
-    --earth-green-200: 140 25% 85%;
-    --earth-green-300: 140 30% 75%;
-    --earth-green-400: 140 35% 65%;
-    --earth-green-500: 140 40% 50%;
-    --earth-green-600: 140 45% 40%;
-    --earth-green-700: 140 50% 30%;
-    --earth-green-800: 140 55% 25%;
-    --earth-green-900: 140 60% 20%;
+    /* Bright Oranges */
+    --vibrant-orange-50: 35 100% 95%;
+    --vibrant-orange-100: 35 95% 90%;
+    --vibrant-orange-200: 35 90% 85%;
+    --vibrant-orange-300: 35 95% 75%;
+    --vibrant-orange-400: 35 95% 70%;
+    --vibrant-orange-500: 35 95% 65%;
+    --vibrant-orange-600: 35 95% 55%;
+    --vibrant-orange-700: 35 95% 45%;
+    --vibrant-orange-800: 35 95% 35%;
+    --vibrant-orange-900: 35 95% 25%;
 
-    /* Sunset Oranges */
-    --earth-orange-50: 25 90% 95%;
-    --earth-orange-100: 25 85% 90%;
-    --earth-orange-200: 25 80% 85%;
-    --earth-orange-300: 25 75% 75%;
-    --earth-orange-400: 25 75% 70%;
-    --earth-orange-500: 25 75% 65%;
-    --earth-orange-600: 25 75% 55%;
-    --earth-orange-700: 25 75% 45%;
-    --earth-orange-800: 25 75% 35%;
-    --earth-orange-900: 25 75% 25%;
+    /* Light Blues */
+    --light-blue-50: 195 100% 98%;
+    --light-blue-100: 195 95% 95%;
+    --light-blue-200: 195 90% 90%;
+    --light-blue-300: 195 85% 85%;
+    --light-blue-400: 195 80% 75%;
+    --light-blue-500: 195 75% 65%;
+    --light-blue-600: 195 70% 55%;
+    --light-blue-700: 195 65% 45%;
+    --light-blue-800: 195 60% 35%;
+    --light-blue-900: 195 55% 25%;
   }
 
   .dark {
-    --background: 30 45% 8%;
-    --foreground: 45 20% 90%;
+    --background: 220 40% 8%;
+    --foreground: 210 80% 95%;
 
-    --card: 30 45% 12%;
-    --card-foreground: 45 20% 90%;
+    --card: 220 35% 12%;
+    --card-foreground: 210 80% 95%;
 
-    --popover: 30 45% 12%;
-    --popover-foreground: 45 20% 90%;
+    --popover: 220 35% 12%;
+    --popover-foreground: 210 80% 95%;
 
-    --primary: 25 75% 65%;
-    --primary-foreground: 30 45% 8%;
+    --primary: 200 95% 55%;
+    --primary-foreground: 220 40% 8%;
 
-    --secondary: 140 25% 20%;
-    --secondary-foreground: 45 20% 90%;
+    --secondary: 220 30% 20%;
+    --secondary-foreground: 210 80% 95%;
 
-    --muted: 140 25% 20%;
-    --muted-foreground: 45 15% 65%;
+    --muted: 220 25% 25%;
+    --muted-foreground: 210 50% 70%;
 
-    --accent: 25 75% 65%;
-    --accent-foreground: 30 45% 8%;
+    --accent: 35 95% 65%;
+    --accent-foreground: 220 40% 8%;
 
     --destructive: 0 62.8% 50%;
-    --destructive-foreground: 45 20% 90%;
+    --destructive-foreground: 210 80% 95%;
 
-    --border: 140 25% 25%;
-    --input: 140 25% 25%;
-    --ring: 25 75% 65%;
+    --border: 220 25% 30%;
+    --input: 220 25% 30%;
+    --ring: 200 95% 55%;
 
-    --sidebar-background: 30 45% 8%;
-    --sidebar-foreground: 45 20% 90%;
-    --sidebar-primary: 25 75% 65%;
-    --sidebar-primary-foreground: 30 45% 8%;
-    --sidebar-accent: 140 25% 20%;
-    --sidebar-accent-foreground: 45 20% 90%;
-    --sidebar-border: 140 25% 25%;
-    --sidebar-ring: 25 75% 65%;
+    --sidebar-background: 220 40% 8%;
+    --sidebar-foreground: 210 80% 95%;
+    --sidebar-primary: 200 95% 55%;
+    --sidebar-primary-foreground: 220 40% 8%;
+    --sidebar-accent: 220 30% 20%;
+    --sidebar-accent-foreground: 210 80% 95%;
+    --sidebar-border: 220 25% 30%;
+    --sidebar-ring: 35 95% 65%;
   }
 }
 
