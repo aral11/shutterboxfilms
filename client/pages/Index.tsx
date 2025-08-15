@@ -71,7 +71,7 @@ export default function Index() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
-              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg shadow-xl border-2 border-white/20 transform hover:scale-105 transition-all duration-200"
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg shadow-2xl border-4 border-white transform hover:scale-105 transition-all duration-200 font-bold"
               onClick={() => window.open('https://youtu.be/chZwdiY66vg?si=5AP79LVZnhXYkb6v', '_blank')}
             >
               <PlayCircle className="mr-2 h-5 w-5" />
@@ -79,16 +79,15 @@ export default function Index() {
             </Button>
             <Button
               size="lg"
-              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg shadow-xl border-2 border-white/20 transform hover:scale-105 transition-all duration-200"
-              onClick={() => window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank')}
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg shadow-2xl border-4 border-white transform hover:scale-105 transition-all duration-200 font-bold"
+              onClick={() => window.open('https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==', '_blank')}
             >
               <Camera className="mr-2 h-5 w-5" />
-              📸 Follow on Instagram
+              🎥 Watch Latest Reel
             </Button>
             <Button
-              variant="outline"
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-vibrant-blue-800 px-8 py-4 text-lg shadow-xl backdrop-blur-sm transform hover:scale-105 transition-all duration-200"
+              className="bg-white/90 text-vibrant-blue-800 hover:bg-white hover:text-vibrant-blue-900 px-8 py-4 text-lg shadow-2xl border-4 border-vibrant-blue-300 transform hover:scale-105 transition-all duration-200 font-bold backdrop-blur-sm"
               asChild
             >
               <Link to="/about">
