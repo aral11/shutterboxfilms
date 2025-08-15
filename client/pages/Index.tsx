@@ -292,16 +292,17 @@ export default function Index() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredContent.map((content, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-vibrant-blue-200 hover:scale-105 rounded-2xl">
-                <div className="aspect-video bg-gradient-to-br from-vibrant-blue-200 to-vibrant-lightBlue-200 relative">
-                  <div className="absolute inset-0 flex items-center justify-center">
+              <Card key={index} className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-vibrant-blue-200 hover:scale-105 hover:rotate-1 rounded-2xl cursor-pointer transform">
+                <div className="aspect-video bg-gradient-to-br from-vibrant-blue-200 to-vibrant-lightBlue-200 relative group">
+                  <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                     {content.type === "ride" && <Mountain className="h-16 w-16 text-vibrant-blue-600" />}
                     {content.type === "film" && <Film className="h-16 w-16 text-vibrant-blue-600" />}
                     {content.type === "blog" && <Camera className="h-16 w-16 text-vibrant-blue-600" />}
                   </div>
-                  <Badge className="absolute top-3 left-3 bg-vibrant-orange-500 text-white shadow-lg border-2 border-white/30 rounded-xl">
-                    {content.type.charAt(0).toUpperCase() + content.type.slice(1)}
+                  <Badge className="absolute top-3 left-3 bg-vibrant-orange-500 text-white shadow-lg border-2 border-white/30 rounded-xl animate-bounce">
+                    {content.type === "ride" && "🏍️"} {content.type === "film" && "🎬"} {content.type === "blog" && "📝"} {content.type.charAt(0).toUpperCase() + content.type.slice(1)}
                   </Badge>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-vibrant-blue-800 mb-3">
