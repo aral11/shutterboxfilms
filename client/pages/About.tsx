@@ -94,38 +94,38 @@ export default function About() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-earth-brown-800 to-earth-green-800 text-white">
+      <section className="relative py-20 bg-gradient-to-br from-vibrant-blue-700 to-vibrant-blue-800 text-white border-b-4 border-vibrant-orange-500">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="bg-earth-orange-500 text-white mb-4">
+              <Badge className="bg-vibrant-orange-500 text-white mb-4 shadow-lg border-2 border-white/20 rounded-xl">
                 The Man Behind the Lens
               </Badge>
-              <h1 className="text-4xl sm:text-5xl font-bold mb-6">
+              <h1 className="text-4xl sm:text-5xl font-bold mb-6 drop-shadow-lg">
                 Meet Sachin Shetty
               </h1>
-              <p className="text-xl text-earth-brown-100 mb-8 leading-relaxed">
-                Filmmaker, photographer, adventurer, and storyteller. For over a decade, I've been capturing 
+              <p className="text-xl text-vibrant-blue-100 mb-8 leading-relaxed">
+                Filmmaker, photographer, adventurer, and storyteller. For over a decade, I've been capturing
                 the world's most beautiful destinations and sharing the stories that unfold along the way.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Badge variant="outline" className="border-earth-orange-300 text-earth-orange-200">
+                <Badge variant="outline" className="border-vibrant-orange-300 text-vibrant-orange-200 border-2 rounded-xl">
                   <Camera className="mr-1 h-3 w-3" />
                   Filmmaker
                 </Badge>
-                <Badge variant="outline" className="border-earth-orange-300 text-earth-orange-200">
+                <Badge variant="outline" className="border-vibrant-orange-300 text-vibrant-orange-200 border-2 rounded-xl">
                   <Mountain className="mr-1 h-3 w-3" />
                   Adventurer
                 </Badge>
-                <Badge variant="outline" className="border-earth-orange-300 text-earth-orange-200">
+                <Badge variant="outline" className="border-vibrant-orange-300 text-vibrant-orange-200 border-2 rounded-xl">
                   <Film className="mr-1 h-3 w-3" />
                   Content Creator
                 </Badge>
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-80 h-80 bg-earth-orange-500 rounded-full flex items-center justify-center">
-                <Camera className="h-32 w-32 text-white" />
+              <div className="w-80 h-80 bg-vibrant-orange-500 rounded-full flex items-center justify-center shadow-2xl border-4 border-white/20">
+                <Camera className="h-32 w-32 text-white drop-shadow-lg" />
               </div>
             </div>
           </div>
@@ -135,10 +135,10 @@ export default function About() {
       {/* Biography Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-earth-brown-800 mb-8 text-center">
+          <h2 className="text-3xl font-bold text-vibrant-blue-800 mb-8 text-center">
             The Journey So Far
           </h2>
-          <div className="prose prose-lg max-w-none text-earth-brown-700">
+          <div className="prose prose-lg max-w-none text-vibrant-blue-700">
             <p className="text-xl leading-relaxed mb-6">
               Born and raised in Karnataka, India, my love for motorcycles began at an early age. 
               What started as weekend rides around the city slowly evolved into longer expeditions, 
@@ -167,16 +167,16 @@ export default function About() {
       {/* Interactive Timeline */}
       <section className="py-16 bg-gradient-to-b from-earth-green-50 to-earth-brown-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-earth-brown-800 mb-4 text-center">
+          <h2 className="text-3xl font-bold text-vibrant-blue-800 mb-4 text-center">
             Milestones & Adventures
           </h2>
-          <p className="text-xl text-earth-brown-600 text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-vibrant-blue-600 text-center mb-12 max-w-2xl mx-auto">
             A timeline of key moments that have shaped the Shutterbox Films journey.
           </p>
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-earth-brown-300 hidden md:block"></div>
+            <div className="absolute left-8 top-0 bottom-0 w-1 bg-vibrant-blue-300 hidden md:block rounded-full"></div>
 
             <div className="space-y-8">
               {timelineEvents.map((event, index) => {
@@ -184,35 +184,35 @@ export default function About() {
                 return (
                   <div key={index} className="relative flex items-start">
                     {/* Timeline dot */}
-                    <div className="hidden md:flex absolute left-6 w-5 h-5 bg-earth-orange-500 rounded-full items-center justify-center -translate-x-1/2">
+                    <div className="hidden md:flex absolute left-6 w-6 h-6 bg-vibrant-orange-500 rounded-full items-center justify-center -translate-x-1/2 shadow-lg border-2 border-white">
                       <div className="w-2 h-2 bg-white rounded-full"></div>
                     </div>
 
                     {/* Content */}
                     <div className="md:ml-16 w-full">
-                      <Card className="border-earth-brown-200 hover:shadow-lg transition-shadow duration-300">
+                      <Card className="border-vibrant-blue-200 hover:shadow-2xl transition-all duration-300 hover:scale-105 rounded-2xl border-2">
                         <CardHeader className="pb-3">
                           <div className="flex items-center justify-between flex-wrap gap-2">
                             <div className="flex items-center space-x-3">
-                              <div className="p-2 bg-earth-orange-100 rounded-lg">
-                                <Icon className="h-5 w-5 text-earth-orange-600" />
+                              <div className="p-2 bg-vibrant-orange-100 rounded-xl shadow-md border-2 border-vibrant-orange-200">
+                                <Icon className="h-5 w-5 text-vibrant-orange-600" />
                               </div>
                               <div>
-                                <CardTitle className="text-earth-brown-800 text-lg">
+                                <CardTitle className="text-vibrant-blue-800 text-lg">
                                   {event.title}
                                 </CardTitle>
-                                <p className="text-earth-brown-600 text-sm">
+                                <p className="text-vibrant-blue-600 text-sm font-medium">
                                   {event.year}
                                 </p>
                               </div>
                             </div>
-                            <Badge 
-                              variant="outline" 
-                              className={`
-                                ${event.type === 'ride' ? 'border-earth-green-300 text-earth-green-700' : ''}
-                                ${event.type === 'milestone' ? 'border-earth-orange-300 text-earth-orange-700' : ''}
-                                ${event.type === 'award' ? 'border-earth-brown-300 text-earth-brown-700' : ''}
-                                ${event.type === 'equipment' ? 'border-earth-brown-400 text-earth-brown-700' : ''}
+                            <Badge
+                              variant="outline"
+                              className={`rounded-xl border-2 font-medium
+                                ${event.type === 'ride' ? 'border-vibrant-lightBlue-300 text-vibrant-lightBlue-700' : ''}
+                                ${event.type === 'milestone' ? 'border-vibrant-orange-300 text-vibrant-orange-700' : ''}
+                                ${event.type === 'award' ? 'border-vibrant-blue-300 text-vibrant-blue-700' : ''}
+                                ${event.type === 'equipment' ? 'border-vibrant-blue-400 text-vibrant-blue-700' : ''}
                               `}
                             >
                               {event.type}
@@ -220,7 +220,7 @@ export default function About() {
                           </div>
                         </CardHeader>
                         <CardContent>
-                          <p className="text-earth-brown-600">{event.description}</p>
+                          <p className="text-vibrant-blue-600">{event.description}</p>
                         </CardContent>
                       </Card>
                     </div>
@@ -233,13 +233,13 @@ export default function About() {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-16 bg-earth-brown-800 text-white">
+      <section className="py-16 bg-vibrant-blue-700 text-white border-y-4 border-vibrant-orange-500">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-3xl font-bold mb-4 drop-shadow-lg">
               My Philosophy & Inspirations
             </h2>
-            <p className="text-xl text-earth-brown-200 max-w-2xl mx-auto">
+            <p className="text-xl text-vibrant-blue-200 max-w-2xl mx-auto">
               The principles and values that guide every adventure and frame every story.
             </p>
           </div>
@@ -248,17 +248,17 @@ export default function About() {
             {philosophyPoints.map((point, index) => {
               const Icon = point.icon;
               return (
-                <Card key={index} className="bg-earth-brown-700 border-earth-brown-600 text-white">
+                <Card key={index} className="bg-vibrant-blue-600 border-vibrant-blue-500 text-white border-2 rounded-2xl shadow-xl">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="p-3 bg-earth-orange-500 rounded-lg flex-shrink-0">
+                      <div className="p-3 bg-vibrant-orange-500 rounded-xl flex-shrink-0 shadow-lg border-2 border-white/20">
                         <Icon className="h-6 w-6 text-white" />
                       </div>
                       <div>
                         <h3 className="text-xl font-bold mb-3 text-white">
                           {point.title}
                         </h3>
-                        <p className="text-earth-brown-200 leading-relaxed">
+                        <p className="text-vibrant-blue-200 leading-relaxed">
                           {point.description}
                         </p>
                       </div>
@@ -274,30 +274,30 @@ export default function About() {
       {/* Cultural Background */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-earth-brown-800 mb-8">
+          <h2 className="text-3xl font-bold text-vibrant-blue-800 mb-8">
             Roots & Heritage
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-earth-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="h-8 w-8 text-earth-green-600" />
+              <div className="w-16 h-16 bg-vibrant-lightBlue-100 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg border-4 border-vibrant-lightBlue-200">
+                <MapPin className="h-8 w-8 text-vibrant-lightBlue-600" />
               </div>
-              <h3 className="text-lg font-semibold text-earth-brown-800 mb-2">Karnataka, India</h3>
-              <p className="text-earth-brown-600">Born and raised in the cultural heart of South India, where my love for exploration first took root.</p>
+              <h3 className="text-lg font-semibold text-vibrant-blue-800 mb-2">Karnataka, India</h3>
+              <p className="text-vibrant-blue-600">Born and raised in the cultural heart of South India, where my love for exploration first took root.</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-earth-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Globe className="h-8 w-8 text-earth-orange-600" />
+              <div className="w-16 h-16 bg-vibrant-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg border-4 border-vibrant-orange-200">
+                <Globe className="h-8 w-8 text-vibrant-orange-600" />
               </div>
-              <h3 className="text-lg font-semibold text-earth-brown-800 mb-2">Global Perspective</h3>
-              <p className="text-earth-brown-600">Bringing Indian values of respect, humility, and curiosity to every international adventure.</p>
+              <h3 className="text-lg font-semibold text-vibrant-blue-800 mb-2">Global Perspective</h3>
+              <p className="text-vibrant-blue-600">Bringing Indian values of respect, humility, and curiosity to every international adventure.</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-earth-brown-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="h-8 w-8 text-earth-brown-600" />
+              <div className="w-16 h-16 bg-vibrant-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg border-4 border-vibrant-blue-200">
+                <Heart className="h-8 w-8 text-vibrant-blue-600" />
               </div>
-              <h3 className="text-lg font-semibold text-earth-brown-800 mb-2">Community First</h3>
-              <p className="text-earth-brown-600">Believing in the power of shared experiences and the importance of giving back to the community.</p>
+              <h3 className="text-lg font-semibold text-vibrant-blue-800 mb-2">Community First</h3>
+              <p className="text-vibrant-blue-600">Believing in the power of shared experiences and the importance of giving back to the community.</p>
             </div>
           </div>
         </div>
