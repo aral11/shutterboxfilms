@@ -191,7 +191,7 @@ export default function Index() {
       {/* Call to Action */}
       <section className="py-16 bg-vibrant-orange-500 text-white border-t-4 border-vibrant-blue-600">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 drop-shadow-lg">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 drop-shadow-lg brand-display">
             Ready to Join the Journey?
           </h2>
           <p className="text-xl mb-8 text-vibrant-orange-100">
