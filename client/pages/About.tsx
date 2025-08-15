@@ -1,17 +1,17 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { 
-  Camera, 
-  Mountain, 
-  Film, 
-  Award, 
-  MapPin, 
+import {
+  Camera,
+  Mountain,
+  Film,
+  Award,
+  MapPin,
   Calendar,
   Heart,
   Target,
   Globe,
-  Users
+  Users,
 } from "lucide-react";
 import Layout from "@/components/Layout";
 
@@ -20,49 +20,56 @@ export default function About() {
     {
       year: "2012",
       title: "First Long Ride",
-      description: "Completed my first long-distance motorcycle journey from Bangalore to Goa, discovering my passion for adventure riding.",
+      description:
+        "Completed my first long-distance motorcycle journey from Bangalore to Goa, discovering my passion for adventure riding.",
       type: "ride",
       icon: Mountain,
     },
     {
       year: "2014",
       title: "YouTube Channel Launch",
-      description: "Started documenting my rides and adventures, creating the foundation of what would become Shutterbox Films.",
+      description:
+        "Started documenting my rides and adventures, creating the foundation of what would become Shutterbox Films.",
       type: "milestone",
       icon: Film,
     },
     {
       year: "2016",
       title: "Himalayan Expedition",
-      description: "First solo expedition to Ladakh, marking the beginning of my high-altitude adventure filmmaking.",
+      description:
+        "First solo expedition to Ladakh, marking the beginning of my high-altitude adventure filmmaking.",
       type: "ride",
       icon: Mountain,
     },
     {
       year: "2018",
       title: "100K Subscribers",
-      description: "Reached 100,000 subscribers, establishing a strong community of adventure enthusiasts.",
+      description:
+        "Reached 100,000 subscribers, establishing a strong community of adventure enthusiasts.",
       type: "milestone",
       icon: Users,
     },
     {
       year: "2020",
       title: "Professional Equipment Upgrade",
-      description: "Invested in professional-grade cameras and equipment, elevating production quality significantly.",
+      description:
+        "Invested in professional-grade cameras and equipment, elevating production quality significantly.",
       type: "equipment",
       icon: Camera,
     },
     {
       year: "2022",
       title: "International Recognition",
-      description: "Won the Adventure Film Festival award for 'Best Travel Documentary' for Monsoon Diaries.",
+      description:
+        "Won the Adventure Film Festival award for 'Best Travel Documentary' for Monsoon Diaries.",
       type: "award",
       icon: Award,
     },
     {
       year: "2024",
       title: "Million Milestone",
-      description: "Crossed 2.5 million subscribers and launched this comprehensive website to better connect with the community.",
+      description:
+        "Crossed 2.5 million subscribers and launched this comprehensive website to better connect with the community.",
       type: "milestone",
       icon: Globe,
     },
@@ -72,22 +79,26 @@ export default function About() {
     {
       icon: Heart,
       title: "Passion Over Perfection",
-      description: "Every journey begins with genuine curiosity and love for exploration, not the pursuit of flawless content.",
+      description:
+        "Every journey begins with genuine curiosity and love for exploration, not the pursuit of flawless content.",
     },
     {
       icon: Camera,
       title: "Authentic Storytelling",
-      description: "Capturing real moments, genuine struggles, and authentic experiences rather than staged perfection.",
+      description:
+        "Capturing real moments, genuine struggles, and authentic experiences rather than staged perfection.",
     },
     {
       icon: Globe,
       title: "Cultural Connection",
-      description: "Embracing local cultures, learning from communities, and sharing diverse perspectives from every destination.",
+      description:
+        "Embracing local cultures, learning from communities, and sharing diverse perspectives from every destination.",
     },
     {
       icon: Target,
       title: "Inspire Responsibly",
-      description: "Encouraging others to explore while respecting nature, local customs, and sustainable travel practices.",
+      description:
+        "Encouraging others to explore while respecting nature, local customs, and sustainable travel practices.",
     },
   ];
 
@@ -105,19 +116,29 @@ export default function About() {
                 Meet Sachin Shetty
               </h1>
               <p className="text-xl text-vibrant-blue-100 mb-8 leading-relaxed">
-                Filmmaker, photographer, adventurer, and storyteller. For over a decade, I've been capturing
-                the world's most beautiful destinations and sharing the stories that unfold along the way.
+                Filmmaker, photographer, adventurer, and storyteller. For over a
+                decade, I've been capturing the world's most beautiful
+                destinations and sharing the stories that unfold along the way.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Badge variant="outline" className="border-vibrant-orange-300 text-vibrant-orange-200 border-2 rounded-xl">
+                <Badge
+                  variant="outline"
+                  className="border-vibrant-orange-300 text-vibrant-orange-200 border-2 rounded-xl"
+                >
                   <Camera className="mr-1 h-3 w-3" />
                   Filmmaker
                 </Badge>
-                <Badge variant="outline" className="border-vibrant-orange-300 text-vibrant-orange-200 border-2 rounded-xl">
+                <Badge
+                  variant="outline"
+                  className="border-vibrant-orange-300 text-vibrant-orange-200 border-2 rounded-xl"
+                >
                   <Mountain className="mr-1 h-3 w-3" />
                   Adventurer
                 </Badge>
-                <Badge variant="outline" className="border-vibrant-orange-300 text-vibrant-orange-200 border-2 rounded-xl">
+                <Badge
+                  variant="outline"
+                  className="border-vibrant-orange-300 text-vibrant-orange-200 border-2 rounded-xl"
+                >
                   <Film className="mr-1 h-3 w-3" />
                   Content Creator
                 </Badge>
@@ -147,25 +168,31 @@ export default function About() {
           </h2>
           <div className="prose prose-lg max-w-none text-vibrant-blue-700">
             <p className="text-xl leading-relaxed mb-6">
-              Born and raised in Karnataka, India, my love for motorcycles began at an early age. 
-              What started as weekend rides around the city slowly evolved into longer expeditions, 
-              and eventually transformed into a full-time passion for adventure filmmaking.
+              Born and raised in Karnataka, India, my love for motorcycles began
+              at an early age. What started as weekend rides around the city
+              slowly evolved into longer expeditions, and eventually transformed
+              into a full-time passion for adventure filmmaking.
             </p>
             <p className="text-lg leading-relaxed mb-6">
-              My background in engineering taught me the importance of preparation and attention to detail—skills 
-              that proved invaluable when planning complex multi-day expeditions across challenging terrains. 
-              But it was my innate curiosity about people, places, and cultures that truly shaped my approach to storytelling.
+              My background in engineering taught me the importance of
+              preparation and attention to detail—skills that proved invaluable
+              when planning complex multi-day expeditions across challenging
+              terrains. But it was my innate curiosity about people, places, and
+              cultures that truly shaped my approach to storytelling.
             </p>
             <p className="text-lg leading-relaxed mb-6">
-              Over the years, I've had the privilege of exploring over 25 countries, documenting everything from 
-              the bustling streets of Southeast Asian cities to the remote mountain villages of the Himalayas. 
-              Each journey has taught me something new—not just about the world, but about myself and the incredible 
-              resilience of the human spirit.
+              Over the years, I've had the privilege of exploring over 25
+              countries, documenting everything from the bustling streets of
+              Southeast Asian cities to the remote mountain villages of the
+              Himalayas. Each journey has taught me something new—not just about
+              the world, but about myself and the incredible resilience of the
+              human spirit.
             </p>
             <p className="text-lg leading-relaxed">
-              Today, Shutterbox Films isn't just about motorcycle adventures—it's about inspiring others to step 
-              outside their comfort zones, embrace uncertainty, and discover the extraordinary stories that exist 
-              in every corner of our world.
+              Today, Shutterbox Films isn't just about motorcycle
+              adventures—it's about inspiring others to step outside their
+              comfort zones, embrace uncertainty, and discover the extraordinary
+              stories that exist in every corner of our world.
             </p>
           </div>
         </div>
@@ -178,7 +205,8 @@ export default function About() {
             Milestones & Adventures
           </h2>
           <p className="text-xl text-vibrant-blue-600 text-center mb-12 max-w-2xl mx-auto">
-            A timeline of key moments that have shaped the Shutterbox Films journey.
+            A timeline of key moments that have shaped the Shutterbox Films
+            journey.
           </p>
 
           <div className="relative">
@@ -216,10 +244,10 @@ export default function About() {
                             <Badge
                               variant="outline"
                               className={`rounded-xl border-2 font-medium
-                                ${event.type === 'ride' ? 'border-vibrant-lightBlue-300 text-vibrant-lightBlue-700' : ''}
-                                ${event.type === 'milestone' ? 'border-vibrant-orange-300 text-vibrant-orange-700' : ''}
-                                ${event.type === 'award' ? 'border-vibrant-blue-300 text-vibrant-blue-700' : ''}
-                                ${event.type === 'equipment' ? 'border-vibrant-blue-400 text-vibrant-blue-700' : ''}
+                                ${event.type === "ride" ? "border-vibrant-lightBlue-300 text-vibrant-lightBlue-700" : ""}
+                                ${event.type === "milestone" ? "border-vibrant-orange-300 text-vibrant-orange-700" : ""}
+                                ${event.type === "award" ? "border-vibrant-blue-300 text-vibrant-blue-700" : ""}
+                                ${event.type === "equipment" ? "border-vibrant-blue-400 text-vibrant-blue-700" : ""}
                               `}
                             >
                               {event.type}
@@ -227,7 +255,9 @@ export default function About() {
                           </div>
                         </CardHeader>
                         <CardContent>
-                          <p className="text-vibrant-blue-600">{event.description}</p>
+                          <p className="text-vibrant-blue-600">
+                            {event.description}
+                          </p>
                         </CardContent>
                       </Card>
                     </div>
@@ -247,7 +277,8 @@ export default function About() {
               My Philosophy & Inspirations
             </h2>
             <p className="text-xl text-vibrant-blue-200 max-w-2xl mx-auto">
-              The principles and values that guide every adventure and frame every story.
+              The principles and values that guide every adventure and frame
+              every story.
             </p>
           </div>
 
@@ -255,7 +286,10 @@ export default function About() {
             {philosophyPoints.map((point, index) => {
               const Icon = point.icon;
               return (
-                <Card key={index} className="bg-vibrant-blue-600 border-vibrant-blue-500 text-white border-2 rounded-2xl shadow-xl">
+                <Card
+                  key={index}
+                  className="bg-vibrant-blue-600 border-vibrant-blue-500 text-white border-2 rounded-2xl shadow-xl"
+                >
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       <div className="p-3 bg-vibrant-orange-500 rounded-xl flex-shrink-0 shadow-lg border-2 border-white/20">
@@ -289,22 +323,37 @@ export default function About() {
               <div className="w-16 h-16 bg-vibrant-lightBlue-100 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg border-4 border-vibrant-lightBlue-200">
                 <MapPin className="h-8 w-8 text-vibrant-lightBlue-600" />
               </div>
-              <h3 className="text-lg font-semibold text-vibrant-blue-800 mb-2">Karnataka, India</h3>
-              <p className="text-vibrant-blue-600">Born and raised in the cultural heart of South India, where my love for exploration first took root.</p>
+              <h3 className="text-lg font-semibold text-vibrant-blue-800 mb-2">
+                Karnataka, India
+              </h3>
+              <p className="text-vibrant-blue-600">
+                Born and raised in the cultural heart of South India, where my
+                love for exploration first took root.
+              </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-vibrant-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg border-4 border-vibrant-orange-200">
                 <Globe className="h-8 w-8 text-vibrant-orange-600" />
               </div>
-              <h3 className="text-lg font-semibold text-vibrant-blue-800 mb-2">Global Perspective</h3>
-              <p className="text-vibrant-blue-600">Bringing Indian values of respect, humility, and curiosity to every international adventure.</p>
+              <h3 className="text-lg font-semibold text-vibrant-blue-800 mb-2">
+                Global Perspective
+              </h3>
+              <p className="text-vibrant-blue-600">
+                Bringing Indian values of respect, humility, and curiosity to
+                every international adventure.
+              </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-vibrant-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg border-4 border-vibrant-blue-200">
                 <Heart className="h-8 w-8 text-vibrant-blue-600" />
               </div>
-              <h3 className="text-lg font-semibold text-vibrant-blue-800 mb-2">Community First</h3>
-              <p className="text-vibrant-blue-600">Believing in the power of shared experiences and the importance of giving back to the community.</p>
+              <h3 className="text-lg font-semibold text-vibrant-blue-800 mb-2">
+                Community First
+              </h3>
+              <p className="text-vibrant-blue-600">
+                Believing in the power of shared experiences and the importance
+                of giving back to the community.
+              </p>
             </div>
           </div>
         </div>

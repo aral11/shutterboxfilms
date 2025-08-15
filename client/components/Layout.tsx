@@ -1,6 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Camera, Mountain, Film, BookOpen, Users, Mail, Menu, X } from "lucide-react";
+import {
+  Camera,
+  Mountain,
+  Film,
+  BookOpen,
+  Users,
+  Mail,
+  Menu,
+  X,
+} from "lucide-react";
 import { useState } from "react";
 
 interface LayoutProps {
@@ -46,8 +55,12 @@ export default function Layout({ children }: LayoutProps) {
                 </div>
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-white drop-shadow-sm brand-script">Shutterbox Films</h1>
-                <p className="text-vibrant-orange-200 text-sm">The Journey of Sachin Shetty</p>
+                <h1 className="text-2xl font-bold text-white drop-shadow-sm brand-script">
+                  Shutterbox Films
+                </h1>
+                <p className="text-vibrant-orange-200 text-sm">
+                  The Journey of Sachin Shetty
+                </p>
               </div>
             </Link>
 
@@ -140,12 +153,17 @@ export default function Layout({ children }: LayoutProps) {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold brand-script">Shutterbox Films</h3>
-                  <p className="text-vibrant-orange-200 text-sm">The Journey of Sachin Shetty</p>
+                  <h3 className="text-xl font-bold brand-script">
+                    Shutterbox Films
+                  </h3>
+                  <p className="text-vibrant-orange-200 text-sm">
+                    The Journey of Sachin Shetty
+                  </p>
                 </div>
               </div>
               <p className="text-vibrant-blue-200 mb-4">
-                Exploring the world through the lens of adventure, capturing the beauty of life on two wheels and beyond.
+                Exploring the world through the lens of adventure, capturing the
+                beauty of life on two wheels and beyond.
               </p>
               <div className="flex space-x-4">
                 <a
@@ -154,7 +172,8 @@ export default function Layout({ children }: LayoutProps) {
                   rel="noopener noreferrer"
                   className="text-vibrant-orange-300 hover:text-vibrant-orange-500 transition-colors font-medium flex items-center space-x-1"
                 >
-                  <span>🎬</span><span>YouTube</span>
+                  <span>🎬</span>
+                  <span>YouTube</span>
                 </a>
                 <a
                   href="https://www.instagram.com/shutterboxfilms_official/"
@@ -162,7 +181,8 @@ export default function Layout({ children }: LayoutProps) {
                   rel="noopener noreferrer"
                   className="text-vibrant-orange-300 hover:text-vibrant-orange-500 transition-colors font-medium flex items-center space-x-1"
                 >
-                  <span>📸</span><span>Instagram</span>
+                  <span>📸</span>
+                  <span>Instagram</span>
                 </a>
                 <a
                   href="https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg=="
@@ -170,7 +190,8 @@ export default function Layout({ children }: LayoutProps) {
                   rel="noopener noreferrer"
                   className="text-vibrant-orange-300 hover:text-vibrant-orange-500 transition-colors font-medium flex items-center space-x-1"
                 >
-                  <span>🎥</span><span>Latest Reel</span>
+                  <span>🎥</span>
+                  <span>Latest Reel</span>
                 </a>
               </div>
             </div>
@@ -212,7 +233,8 @@ export default function Layout({ children }: LayoutProps) {
 
           <div className="border-t border-vibrant-blue-600 mt-8 pt-8 text-center">
             <p className="text-vibrant-blue-300">
-              © 2024 Shutterbox Films. All rights reserved. | Exploring the World, Frame by Frame.
+              © 2024 Shutterbox Films. All rights reserved. | Exploring the
+              World, Frame by Frame.
             </p>
           </div>
         </div>

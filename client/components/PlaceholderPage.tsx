@@ -7,7 +7,11 @@ interface PlaceholderPageProps {
   icon?: React.ComponentType<any>;
 }
 
-export default function PlaceholderPage({ title, description, icon: Icon = Construction }: PlaceholderPageProps) {
+export default function PlaceholderPage({
+  title,
+  description,
+  icon: Icon = Construction,
+}: PlaceholderPageProps) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vibrant-blue-50 to-vibrant-lightBlue-50 px-4">
       <Card className="max-w-md w-full text-center shadow-2xl border-vibrant-blue-200 rounded-2xl">
@@ -24,11 +28,16 @@ export default function PlaceholderPage({ title, description, icon: Icon = Const
               </div>
             </div>
           </div>
-          <h1 className="text-2xl font-bold text-vibrant-blue-800 mb-4 brand-script">{title}</h1>
+          <h1 className="text-2xl font-bold text-vibrant-blue-800 mb-4 brand-script">
+            {title}
+          </h1>
           <p className="text-vibrant-blue-600 mb-6">{description}</p>
           <div className="text-sm text-vibrant-blue-500 bg-vibrant-blue-50 p-4 rounded-xl border-2 border-vibrant-blue-200">
             <p className="font-medium mb-2">This page is coming soon!</p>
-            <p>Continue prompting to help build out the content for this section of Sachin's website.</p>
+            <p>
+              Continue prompting to help build out the content for this section
+              of Sachin's website.
+            </p>
           </div>
         </CardContent>
       </Card>

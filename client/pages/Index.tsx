@@ -1,7 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Camera, Mountain, Film, PlayCircle, ArrowRight, MapPin, Calendar, Eye } from "lucide-react";
+import {
+  Camera,
+  Mountain,
+  Film,
+  PlayCircle,
+  ArrowRight,
+  MapPin,
+  Calendar,
+  Eye,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 
@@ -10,21 +19,24 @@ export default function Index() {
     {
       type: "ride",
       title: "Ladakh Adventure 2024",
-      description: "18 days across the Himalayas, capturing breathtaking landscapes and challenging terrains.",
+      description:
+        "18 days across the Himalayas, capturing breathtaking landscapes and challenging terrains.",
       image: "mountain-landscape",
       stats: { distance: "3,500 km", duration: "18 days", views: "2.1M" },
     },
     {
       type: "film",
       title: "Monsoon Diaries",
-      description: "A cinematic journey through Kerala's backwaters during the monsoon season.",
+      description:
+        "A cinematic journey through Kerala's backwaters during the monsoon season.",
       image: "monsoon-scene",
       stats: { duration: "42 min", format: "4K", views: "850K" },
     },
     {
       type: "blog",
       title: "Gear Guide: Essential Camera Equipment for Adventure Photography",
-      description: "Everything you need to capture stunning photos while on the road.",
+      description:
+        "Everything you need to capture stunning photos while on the road.",
       image: "camera-gear",
       stats: { readTime: "8 min", published: "Dec 2024", views: "45K" },
     },
@@ -60,11 +72,14 @@ export default function Index() {
             </Badge>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
               Adventure Awaits,
-              <span className="text-vibrant-orange-400 block brand-script">Every Frame Tells a Story</span>
+              <span className="text-vibrant-orange-400 block brand-script">
+                Every Frame Tells a Story
+              </span>
             </h1>
             <p className="text-xl sm:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
-              🏔️ From mountain peaks to forest trails, 🏍️ motorcycle adventures to 📸 cinematic storytelling -
-              Experience the world through Sachin Shetty's lens of endless exploration.
+              🏔️ From mountain peaks to forest trails, 🏍️ motorcycle adventures
+              to 📸 cinematic storytelling - Experience the world through Sachin
+              Shetty's lens of endless exploration.
             </p>
           </div>
 
@@ -72,7 +87,12 @@ export default function Index() {
             <Button
               size="lg"
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg shadow-2xl border-4 border-white transform hover:scale-105 transition-all duration-200 font-bold"
-              onClick={() => window.open('https://youtu.be/chZwdiY66vg?si=5AP79LVZnhXYkb6v', '_blank')}
+              onClick={() =>
+                window.open(
+                  "https://youtu.be/chZwdiY66vg?si=5AP79LVZnhXYkb6v",
+                  "_blank",
+                )
+              }
             >
               <PlayCircle className="mr-2 h-5 w-5" />
               🎥 Watch on YouTube
@@ -80,7 +100,12 @@ export default function Index() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg shadow-2xl border-4 border-white transform hover:scale-105 transition-all duration-200 font-bold"
-              onClick={() => window.open('https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==', '_blank')}
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==",
+                  "_blank",
+                )
+              }
             >
               <Camera className="mr-2 h-5 w-5" />
               🎥 Watch Latest Reel
@@ -100,7 +125,9 @@ export default function Index() {
           {/* Scroll indicator */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
             <div className="flex flex-col items-center">
-              <span className="text-sm mb-2 drop-shadow">⬇️ Scroll to explore amazing adventures</span>
+              <span className="text-sm mb-2 drop-shadow">
+                ⬇️ Scroll to explore amazing adventures
+              </span>
               <div className="w-px h-8 bg-white opacity-70 animate-pulse"></div>
             </div>
           </div>
@@ -115,27 +142,42 @@ export default function Index() {
           </h2>
           <div className="prose prose-lg mx-auto text-vibrant-blue-700">
             <p className="text-xl leading-relaxed mb-6">
-              🌟 Welcome to my world of adventure, cinematography, and endless exploration! I'm Sachin Shetty,
-              and for over a decade, I've been documenting journeys that span continents, cultures, and countless miles of open road.
+              🌟 Welcome to my world of adventure, cinematography, and endless
+              exploration! I'm Sachin Shetty, and for over a decade, I've been
+              documenting journeys that span continents, cultures, and countless
+              miles of open road.
             </p>
             <p className="text-lg leading-relaxed mb-8">
-              ⛰️ From the snow-capped peaks of the Himalayas to the 🏖️ sun-drenched coastlines of South India,
-              every ride tells a story, every frame captures a moment, and every adventure pushes the boundaries
-              of what's possible when passion meets purpose.
+              ⛰️ From the snow-capped peaks of the Himalayas to the 🏖️
+              sun-drenched coastlines of South India, every ride tells a story,
+              every frame captures a moment, and every adventure pushes the
+              boundaries of what's possible when passion meets purpose.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 text-center">
               <div className="bg-vibrant-blue-100 p-4 rounded-xl border-2 border-vibrant-blue-200 transform hover:scale-105 transition-all duration-200">
-                <div className="text-2xl font-bold text-vibrant-blue-700">234K+</div>
-                <div className="text-sm text-vibrant-blue-600">📺 Subscribers</div>
+                <div className="text-2xl font-bold text-vibrant-blue-700">
+                  234K+
+                </div>
+                <div className="text-sm text-vibrant-blue-600">
+                  📺 Subscribers
+                </div>
               </div>
               <div className="bg-vibrant-orange-100 p-4 rounded-xl border-2 border-vibrant-orange-200 transform hover:scale-105 transition-all duration-200">
-                <div className="text-2xl font-bold text-vibrant-orange-700">20+</div>
-                <div className="text-sm text-vibrant-orange-600">🗺️ Adventures</div>
+                <div className="text-2xl font-bold text-vibrant-orange-700">
+                  20+
+                </div>
+                <div className="text-sm text-vibrant-orange-600">
+                  🗺️ Adventures
+                </div>
               </div>
               <div className="bg-vibrant-lightBlue-100 p-4 rounded-xl border-2 border-vibrant-lightBlue-200 transform hover:scale-105 transition-all duration-200">
-                <div className="text-2xl font-bold text-vibrant-lightBlue-700">50K+</div>
-                <div className="text-sm text-vibrant-lightBlue-600">🏍️ KMs Traveled</div>
+                <div className="text-2xl font-bold text-vibrant-lightBlue-700">
+                  50K+
+                </div>
+                <div className="text-sm text-vibrant-lightBlue-600">
+                  🏍️ KMs Traveled
+                </div>
               </div>
               <div className="bg-green-100 p-4 rounded-xl border-2 border-green-200 transform hover:scale-105 transition-all duration-200">
                 <div className="text-2xl font-bold text-green-700">15+</div>
@@ -154,7 +196,8 @@ export default function Index() {
               🌍 Adventures in Every Frame
             </h2>
             <p className="text-xl text-vibrant-blue-600 max-w-2xl mx-auto">
-              From tropical beaches to snowy mountains, every adventure brings new stories to life
+              From tropical beaches to snowy mountains, every adventure brings
+              new stories to life
             </p>
           </div>
 
@@ -240,7 +283,7 @@ export default function Index() {
                 src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2Fbfe54d7d91b748dfbe2b06f5b946fc17?format=webp&width=600"
                 alt="Mountain Winter Adventure"
                 className="w-full h-80 object-cover object-center"
-                style={{objectPosition: 'center 20%'}}
+                style={{ objectPosition: "center 20%" }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 text-white">
@@ -255,7 +298,12 @@ export default function Index() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg shadow-xl transform hover:scale-105 transition-all duration-200"
-              onClick={() => window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank')}
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/shutterboxfilms_official/",
+                  "_blank",
+                )
+              }
             >
               📱 See More Adventures on Instagram
             </Button>
@@ -271,14 +319,17 @@ export default function Index() {
               🎬 Latest Reels & Adventures
             </h2>
             <p className="text-xl text-vibrant-blue-600 max-w-2xl mx-auto">
-              Catch the most exciting moments from recent adventures and behind-the-scenes content
+              Catch the most exciting moments from recent adventures and
+              behind-the-scenes content
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {/* Instagram Reel Embed */}
             <div className="bg-white rounded-2xl shadow-xl p-6 border-2 border-vibrant-blue-200">
-              <h3 className="text-xl font-bold text-vibrant-blue-800 mb-4 text-center">🔥 Latest Instagram Reel</h3>
+              <h3 className="text-xl font-bold text-vibrant-blue-800 mb-4 text-center">
+                🔥 Latest Instagram Reel
+              </h3>
               <div className="aspect-[9/16] max-w-xs mx-auto">
                 <iframe
                   src="https://www.instagram.com/reel/DE37viGNTEN/embed"
@@ -294,7 +345,12 @@ export default function Index() {
                 <Button
                   size="sm"
                   className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-4 py-2 rounded-xl"
-                  onClick={() => window.open('https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==', '_blank')}
+                  onClick={() =>
+                    window.open(
+                      "https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==",
+                      "_blank",
+                    )
+                  }
                 >
                   🎥 Watch Latest Reel
                 </Button>
@@ -303,7 +359,9 @@ export default function Index() {
 
             {/* YouTube Video */}
             <div className="bg-white rounded-2xl shadow-xl p-6 border-2 border-red-200">
-              <h3 className="text-xl font-bold text-red-600 mb-4 text-center">▶️ Latest YouTube Adventure</h3>
+              <h3 className="text-xl font-bold text-red-600 mb-4 text-center">
+                ▶️ Latest YouTube Adventure
+              </h3>
               <div className="aspect-video">
                 <iframe
                   width="100%"
@@ -320,7 +378,12 @@ export default function Index() {
                 <Button
                   size="sm"
                   className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-xl"
-                  onClick={() => window.open('https://youtu.be/chZwdiY66vg?si=5AP79LVZnhXYkb6v', '_blank')}
+                  onClick={() =>
+                    window.open(
+                      "https://youtu.be/chZwdiY66vg?si=5AP79LVZnhXYkb6v",
+                      "_blank",
+                    )
+                  }
                 >
                   🎬 Watch Full Video
                 </Button>
@@ -333,14 +396,24 @@ export default function Index() {
               <Button
                 size="lg"
                 className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 shadow-xl transform hover:scale-105 transition-all duration-200 rounded-xl"
-                onClick={() => window.open('https://youtube.com/@shutterboxfilms?si=7h4wZmIo4g7rq_ii', '_blank')}
+                onClick={() =>
+                  window.open(
+                    "https://youtube.com/@shutterboxfilms?si=7h4wZmIo4g7rq_ii",
+                    "_blank",
+                  )
+                }
               >
                 🎬 Subscribe to YouTube Channel
               </Button>
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 shadow-xl transform hover:scale-105 transition-all duration-200 rounded-xl"
-                onClick={() => window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank')}
+                onClick={() =>
+                  window.open(
+                    "https://www.instagram.com/shutterboxfilms_official/",
+                    "_blank",
+                  )
+                }
               >
                 📸 Follow on Instagram
               </Button>
@@ -353,22 +426,45 @@ export default function Index() {
       <section className="py-16 bg-vibrant-blue-700 text-white border-y-4 border-vibrant-orange-500">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 brand-display">🏆 Adventure Milestones</h2>
-            <p className="text-vibrant-blue-200">Numbers that tell the story of endless exploration</p>
+            <h2 className="text-3xl font-bold mb-4 brand-display">
+              🏆 Adventure Milestones
+            </h2>
+            <p className="text-vibrant-blue-200">
+              Numbers that tell the story of endless exploration
+            </p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
-              <div key={index} className="text-center transform hover:scale-110 transition-transform duration-300">
+              <div
+                key={index}
+                className="text-center transform hover:scale-110 transition-transform duration-300"
+              >
                 <div className="text-3xl sm:text-4xl font-bold text-vibrant-orange-400 mb-2 drop-shadow-lg animate-pulse">
                   {achievement.number}
                 </div>
                 <div className="text-vibrant-blue-200 text-sm sm:text-base font-medium">
                   {achievement.label}
                 </div>
-                {index === 0 && <div className="text-sm text-vibrant-orange-200 mt-1 font-medium">🎬 And growing!</div>}
-                {index === 1 && <div className="text-sm text-vibrant-orange-200 mt-1 font-medium">🗺️ Epic journeys</div>}
-                {index === 2 && <div className="text-sm text-vibrant-orange-200 mt-1 font-medium">🏍️ Miles of memories</div>}
-                {index === 3 && <div className="text-sm text-vibrant-orange-200 mt-1 font-medium">🌍 Cultures explored</div>}
+                {index === 0 && (
+                  <div className="text-sm text-vibrant-orange-200 mt-1 font-medium">
+                    🎬 And growing!
+                  </div>
+                )}
+                {index === 1 && (
+                  <div className="text-sm text-vibrant-orange-200 mt-1 font-medium">
+                    🗺️ Epic journeys
+                  </div>
+                )}
+                {index === 2 && (
+                  <div className="text-sm text-vibrant-orange-200 mt-1 font-medium">
+                    🏍️ Miles of memories
+                  </div>
+                )}
+                {index === 3 && (
+                  <div className="text-sm text-vibrant-orange-200 mt-1 font-medium">
+                    🌍 Cultures explored
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -383,12 +479,18 @@ export default function Index() {
               🎥 Latest Adventures
             </h2>
             <p className="text-xl text-vibrant-blue-600 max-w-2xl mx-auto">
-              🗺️ Dive into the most recent journeys, 🎬 films, and 📖 stories from the road.
+              🗺️ Dive into the most recent journeys, 🎬 films, and 📖 stories
+              from the road.
             </p>
             <div className="mt-4">
               <Button
                 className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-xl transform hover:scale-105 transition-all duration-200"
-                onClick={() => window.open('https://youtu.be/9yCNpiFdnrg?si=KbyH3Xar7qzllFNu', '_blank')}
+                onClick={() =>
+                  window.open(
+                    "https://youtu.be/9yCNpiFdnrg?si=KbyH3Xar7qzllFNu",
+                    "_blank",
+                  )
+                }
               >
                 🎬 Watch Latest Video
               </Button>
@@ -402,27 +504,53 @@ export default function Index() {
                 className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-vibrant-blue-200 hover:scale-105 hover:rotate-1 rounded-2xl cursor-pointer transform"
                 onClick={() => {
                   if (content.type === "ride") {
-                    window.open('https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==', '_blank');
+                    window.open(
+                      "https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==",
+                      "_blank",
+                    );
                   } else if (content.type === "film") {
-                    window.open('https://youtu.be/chZwdiY66vg?si=5AP79LVZnhXYkb6v', '_blank');
+                    window.open(
+                      "https://youtu.be/chZwdiY66vg?si=5AP79LVZnhXYkb6v",
+                      "_blank",
+                    );
                   } else {
-                    window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank');
+                    window.open(
+                      "https://www.instagram.com/shutterboxfilms_official/",
+                      "_blank",
+                    );
                   }
                 }}
               >
                 <div className="aspect-video bg-gradient-to-br from-vibrant-blue-200 to-vibrant-lightBlue-200 relative group">
                   <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                    {content.type === "ride" && <Mountain className="h-16 w-16 text-vibrant-blue-600" />}
-                    {content.type === "film" && <Film className="h-16 w-16 text-vibrant-blue-600" />}
-                    {content.type === "blog" && <Camera className="h-16 w-16 text-vibrant-blue-600" />}
+                    {content.type === "ride" && (
+                      <Mountain className="h-16 w-16 text-vibrant-blue-600" />
+                    )}
+                    {content.type === "film" && (
+                      <Film className="h-16 w-16 text-vibrant-blue-600" />
+                    )}
+                    {content.type === "blog" && (
+                      <Camera className="h-16 w-16 text-vibrant-blue-600" />
+                    )}
                   </div>
                   <Badge className="absolute top-3 left-3 bg-vibrant-orange-500 text-white shadow-lg border-2 border-white/30 rounded-xl animate-bounce">
-                    {content.type === "ride" && "🏍️"} {content.type === "film" && "🎬"} {content.type === "blog" && "📝"} {content.type.charAt(0).toUpperCase() + content.type.slice(1)}
+                    {content.type === "ride" && "🏍️"}{" "}
+                    {content.type === "film" && "🎬"}{" "}
+                    {content.type === "blog" && "📝"}{" "}
+                    {content.type.charAt(0).toUpperCase() +
+                      content.type.slice(1)}
                   </Badge>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="text-white text-center">
                       <PlayCircle className="h-12 w-12 mx-auto mb-2" />
-                      <p className="font-bold">Click to {content.type === "ride" ? "Watch Reel" : content.type === "film" ? "Watch Video" : "View More"}</p>
+                      <p className="font-bold">
+                        Click to{" "}
+                        {content.type === "ride"
+                          ? "Watch Reel"
+                          : content.type === "film"
+                            ? "Watch Video"
+                            : "View More"}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -435,14 +563,23 @@ export default function Index() {
                   </p>
                   <div className="flex items-center justify-between text-sm text-vibrant-blue-500 mb-4">
                     <div className="flex items-center space-x-4">
-                      {Object.entries(content.stats).map(([key, value], idx) => (
-                        <span key={idx} className="flex items-center space-x-1">
-                          {key === "views" && <Eye className="h-3 w-3" />}
-                          {key === "duration" && <Calendar className="h-3 w-3" />}
-                          {key === "distance" && <MapPin className="h-3 w-3" />}
-                          <span>{value}</span>
-                        </span>
-                      ))}
+                      {Object.entries(content.stats).map(
+                        ([key, value], idx) => (
+                          <span
+                            key={idx}
+                            className="flex items-center space-x-1"
+                          >
+                            {key === "views" && <Eye className="h-3 w-3" />}
+                            {key === "duration" && (
+                              <Calendar className="h-3 w-3" />
+                            )}
+                            {key === "distance" && (
+                              <MapPin className="h-3 w-3" />
+                            )}
+                            <span>{value}</span>
+                          </span>
+                        ),
+                      )}
                     </div>
                   </div>
                   <Button
@@ -450,15 +587,28 @@ export default function Index() {
                     onClick={(e) => {
                       e.stopPropagation();
                       if (content.type === "ride") {
-                        window.open('https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==', '_blank');
+                        window.open(
+                          "https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==",
+                          "_blank",
+                        );
                       } else if (content.type === "film") {
-                        window.open('https://youtu.be/chZwdiY66vg?si=5AP79LVZnhXYkb6v', '_blank');
+                        window.open(
+                          "https://youtu.be/chZwdiY66vg?si=5AP79LVZnhXYkb6v",
+                          "_blank",
+                        );
                       } else {
-                        window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank');
+                        window.open(
+                          "https://www.instagram.com/shutterboxfilms_official/",
+                          "_blank",
+                        );
                       }
                     }}
                   >
-                    {content.type === "ride" ? "🎥 Watch Reel" : content.type === "film" ? "▶️ Watch Video" : "📖 Read More"}
+                    {content.type === "ride"
+                      ? "🎥 Watch Reel"
+                      : content.type === "film"
+                        ? "▶️ Watch Video"
+                        : "📖 Read More"}
                   </Button>
                 </CardContent>
               </Card>
@@ -474,20 +624,31 @@ export default function Index() {
             🚀 Ready to Join the Journey?
           </h2>
           <p className="text-xl mb-8 text-vibrant-orange-100">
-            🔔 Subscribe for epic adventures, 🛠️ gear reviews, and 🎬 behind-the-scenes content from every ride!
+            🔔 Subscribe for epic adventures, 🛠️ gear reviews, and 🎬
+            behind-the-scenes content from every ride!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 shadow-xl border-2 border-white/20 rounded-xl font-bold transform hover:scale-105 transition-all duration-200"
-              onClick={() => window.open('https://youtube.com/@shutterboxfilms?si=7h4wZmIo4g7rq_ii', '_blank')}
+              onClick={() =>
+                window.open(
+                  "https://youtube.com/@shutterboxfilms?si=7h4wZmIo4g7rq_ii",
+                  "_blank",
+                )
+              }
             >
               🎬 Subscribe on YouTube
             </Button>
             <Button
               size="lg"
               className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 shadow-xl border-2 border-white/20 rounded-xl font-bold transform hover:scale-105 transition-all duration-200"
-              onClick={() => window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank')}
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/shutterboxfilms_official/",
+                  "_blank",
+                )
+              }
             >
               📸 Follow on Instagram
             </Button>
@@ -495,7 +656,12 @@ export default function Index() {
               variant="outline"
               size="lg"
               className="border-2 border-white text-white hover:bg-white hover:text-vibrant-orange-500 px-8 py-4 shadow-xl rounded-xl font-bold transform hover:scale-105 transition-all duration-200"
-              onClick={() => window.open('https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==', '_blank')}
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==",
+                  "_blank",
+                )
+              }
             >
               🎥 Watch Latest Reel
             </Button>

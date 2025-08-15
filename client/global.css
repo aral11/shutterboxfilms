@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Import Google Fonts for Shutterbox Films branding */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fredoka+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fredoka+One&display=swap");
 
 @layer base {
   /**
@@ -140,10 +140,10 @@
 
   /* Custom brand font classes */
   .brand-script {
-    font-family: 'Dancing Script', cursive;
+    font-family: "Dancing Script", cursive;
   }
 
   .brand-display {
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
   }
 }
