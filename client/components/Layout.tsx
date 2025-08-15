@@ -46,7 +46,7 @@ export default function Layout({ children }: LayoutProps) {
                 </div>
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-white drop-shadow-sm" style={{fontFamily: 'cursive'}}>Shutterbox Films</h1>
+                <h1 className="text-2xl font-bold text-white drop-shadow-sm brand-script">Shutterbox Films</h1>
                 <p className="text-vibrant-orange-200 text-sm">The Journey of Sachin Shetty</p>
               </div>
             </Link>
@@ -140,7 +140,7 @@ export default function Layout({ children }: LayoutProps) {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold" style={{fontFamily: 'cursive'}}>Shutterbox Films</h3>
+                  <h3 className="text-xl font-bold brand-script">Shutterbox Films</h3>
                   <p className="text-vibrant-orange-200 text-sm">The Journey of Sachin Shetty</p>
                 </div>
               </div>
