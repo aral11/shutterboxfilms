@@ -235,12 +235,13 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Mountain Adventure (smaller size to fit) */}
+            {/* Mountain Adventure (adjusted positioning) */}
             <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2Fbfe54d7d91b748dfbe2b06f5b946fc17?format=webp&width=600"
                 alt="Mountain Winter Adventure"
-                className="w-full h-80 object-cover"
+                className="w-full h-80 object-cover object-center"
+                style={{objectPosition: 'center 20%'}}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 text-white">
