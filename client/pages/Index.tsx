@@ -44,8 +44,8 @@ export default function Index() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2Fbfe54d7d91b748dfbe2b06f5b946fc17?format=webp&width=1920"
-            alt="Sachin Shetty - Mountain Adventure"
+            src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2F755c843cb17f476d971a5c47ba580a10?format=webp&width=1920"
+            alt="Sachin Shetty - Wilderness Camping Adventure"
             className="w-full h-full object-cover"
           />
           {/* Subtle overlay to ensure text readability */}
@@ -295,7 +295,7 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-vibrant-blue-800 mb-4 brand-display">
-              �� Latest Adventures
+              🎥 Latest Adventures
             </h2>
             <p className="text-xl text-vibrant-blue-600 max-w-2xl mx-auto">
               🗺️ Dive into the most recent journeys, 🎬 films, and 📖 stories from the road.
