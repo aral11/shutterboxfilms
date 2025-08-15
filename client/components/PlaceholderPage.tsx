@@ -24,7 +24,7 @@ export default function PlaceholderPage({ title, description, icon: Icon = Const
               </div>
             </div>
           </div>
-          <h1 className="text-2xl font-bold text-vibrant-blue-800 mb-4" style={{fontFamily: 'cursive'}}>{title}</h1>
+          <h1 className="text-2xl font-bold text-vibrant-blue-800 mb-4 brand-script">{title}</h1>
           <p className="text-vibrant-blue-600 mb-6">{description}</p>
           <div className="text-sm text-vibrant-blue-500 bg-vibrant-blue-50 p-4 rounded-xl border-2 border-vibrant-blue-200">
             <p className="font-medium mb-2">This page is coming soon!</p>
