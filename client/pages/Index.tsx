@@ -199,8 +199,8 @@ export default function Index() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-lg font-bold">🏍️ Forest Trails</h3>
-                  <p className="text-sm">Deep wilderness exploration</p>
+                  <h3 className="text-lg font-bold">🎭 Festival Outfit</h3>
+                  <p className="text-sm">Cultural celebrations & style</p>
                 </div>
               </div>
             </div>
@@ -295,7 +295,7 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-vibrant-blue-800 mb-4 brand-display">
-              🎥 Latest Adventures
+              �� Latest Adventures
             </h2>
             <p className="text-xl text-vibrant-blue-600 max-w-2xl mx-auto">
               🗺️ Dive into the most recent journeys, 🎬 films, and 📖 stories from the road.
