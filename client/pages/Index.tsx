@@ -44,12 +44,12 @@ export default function Index() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2F0014b6a0c63e4367a09df5c9693d0f77?format=webp&width=1920"
-            alt="Shutterbox Films Hero Background"
+            src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2Fc9e4b1286424491c80ea6c7a78b9f13d?format=webp&width=1920"
+            alt="Shutterbox Films - Sachin Shetty Official Brand"
             className="w-full h-full object-cover"
           />
           {/* Subtle overlay to ensure text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-vibrant-blue-900/30 via-transparent to-vibrant-blue-900/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-vibrant-blue-900/40 via-transparent to-vibrant-blue-900/20"></div>
         </div>
 
         {/* Hero Content */}
@@ -60,7 +60,7 @@ export default function Index() {
             </Badge>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
               Exploring the World,
-              <span className="text-vibrant-orange-400 block">Frame by Frame</span>
+              <span className="text-vibrant-orange-400 block" style={{fontFamily: 'cursive'}}>Frame by Frame</span>
             </h1>
             <p className="text-xl sm:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
               Join Sachin Shetty on an extraordinary journey across continents, capturing the beauty of adventure,
