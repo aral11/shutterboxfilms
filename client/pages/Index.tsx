@@ -31,10 +31,10 @@ export default function Index() {
   ];
 
   const achievements = [
-    { number: "2.5M+", label: "YouTube Subscribers" },
-    { number: "150+", label: "Adventures Documented" },
+    { number: "234K+", label: "YouTube Subscribers" },
+    { number: "20+", label: "Adventures Documented" },
     { number: "50,000+", label: "Kilometers Traveled" },
-    { number: "25+", label: "Countries Explored" },
+    { number: "15+", label: "Countries Explored" },
   ];
 
   return (
