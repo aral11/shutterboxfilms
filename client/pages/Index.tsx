@@ -44,8 +44,8 @@ export default function Index() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2Fc9e4b1286424491c80ea6c7a78b9f13d?format=webp&width=1920"
-            alt="Shutterbox Films - Sachin Shetty Official Brand"
+            src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2Fbfe54d7d91b748dfbe2b06f5b946fc17?format=webp&width=1920"
+            alt="Sachin Shetty - Mountain Adventure"
             className="w-full h-full object-cover"
           />
           {/* Subtle overlay to ensure text readability */}
