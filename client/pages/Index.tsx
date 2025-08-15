@@ -63,7 +63,7 @@ export default function Index() {
               <span className="text-vibrant-orange-400 block brand-script">Every Frame Tells a Story</span>
             </h1>
             <p className="text-xl sm:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
-              🏔️ From mountain peaks to forest trails, ����️ motorcycle adventures to 📸 cinematic storytelling -
+              🏔️ From mountain peaks to forest trails, 🏍️ motorcycle adventures to 📸 cinematic storytelling -
               Experience the world through Sachin Shetty's lens of endless exploration.
             </p>
           </div>
@@ -342,7 +342,7 @@ export default function Index() {
                 className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 shadow-xl transform hover:scale-105 transition-all duration-200 rounded-xl"
                 onClick={() => window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank')}
               >
-                �� Follow on Instagram
+                📸 Follow on Instagram
               </Button>
             </div>
           </div>
@@ -445,8 +445,20 @@ export default function Index() {
                       ))}
                     </div>
                   </div>
-                  <Button variant="outline" className="w-full border-vibrant-blue-300 text-vibrant-blue-700 hover:bg-vibrant-blue-50 rounded-xl border-2">
-                    Learn More
+                  <Button
+                    className="w-full bg-gradient-to-r from-vibrant-blue-500 to-vibrant-blue-600 hover:from-vibrant-blue-600 hover:to-vibrant-blue-700 text-white rounded-xl border-2 border-white shadow-lg font-bold transform hover:scale-105 transition-all duration-200"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (content.type === "ride") {
+                        window.open('https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==', '_blank');
+                      } else if (content.type === "film") {
+                        window.open('https://youtu.be/chZwdiY66vg?si=5AP79LVZnhXYkb6v', '_blank');
+                      } else {
+                        window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank');
+                      }
+                    }}
+                  >
+                    {content.type === "ride" ? "🎥 Watch Reel" : content.type === "film" ? "▶️ Watch Video" : "📖 Read More"}
                   </Button>
                 </CardContent>
               </Card>
