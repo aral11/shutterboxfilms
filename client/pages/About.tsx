@@ -101,7 +101,7 @@ export default function About() {
               <Badge className="bg-vibrant-orange-500 text-white mb-4 shadow-lg border-2 border-white/20 rounded-xl">
                 The Man Behind the Lens
               </Badge>
-              <h1 className="text-4xl sm:text-5xl font-bold mb-6 drop-shadow-lg" style={{fontFamily: 'cursive'}}>
+              <h1 className="text-4xl sm:text-5xl font-bold mb-6 drop-shadow-lg brand-script">
                 Meet Sachin Shetty
               </h1>
               <p className="text-xl text-vibrant-blue-100 mb-8 leading-relaxed">
@@ -142,7 +142,7 @@ export default function About() {
       {/* Biography Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-vibrant-blue-800 mb-8 text-center">
+          <h2 className="text-3xl font-bold text-vibrant-blue-800 mb-8 text-center brand-display">
             The Journey So Far
           </h2>
           <div className="prose prose-lg max-w-none text-vibrant-blue-700">
@@ -174,7 +174,7 @@ export default function About() {
       {/* Interactive Timeline */}
       <section className="py-16 bg-gradient-to-b from-earth-green-50 to-earth-brown-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-vibrant-blue-800 mb-4 text-center">
+          <h2 className="text-3xl font-bold text-vibrant-blue-800 mb-4 text-center brand-display">
             Milestones & Adventures
           </h2>
           <p className="text-xl text-vibrant-blue-600 text-center mb-12 max-w-2xl mx-auto">
@@ -243,7 +243,7 @@ export default function About() {
       <section className="py-16 bg-vibrant-blue-700 text-white border-y-4 border-vibrant-orange-500">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 drop-shadow-lg">
+            <h2 className="text-3xl font-bold mb-4 drop-shadow-lg brand-display">
               My Philosophy & Inspirations
             </h2>
             <p className="text-xl text-vibrant-blue-200 max-w-2xl mx-auto">
@@ -281,7 +281,7 @@ export default function About() {
       {/* Cultural Background */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-vibrant-blue-800 mb-8">
+          <h2 className="text-3xl font-bold text-vibrant-blue-800 mb-8 brand-display">
             Roots & Heritage
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
