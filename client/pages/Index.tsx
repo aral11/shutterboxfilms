@@ -116,14 +116,33 @@ export default function Index() {
           </h2>
           <div className="prose prose-lg mx-auto text-vibrant-blue-700">
             <p className="text-xl leading-relaxed mb-6">
-              Welcome to my world of adventure, cinematography, and endless exploration. I'm Sachin Shetty,
+              🌟 Welcome to my world of adventure, cinematography, and endless exploration! I'm Sachin Shetty,
               and for over a decade, I've been documenting journeys that span continents, cultures, and countless miles of open road.
             </p>
-            <p className="text-lg leading-relaxed">
-              From the snow-capped peaks of the Himalayas to the sun-drenched coastlines of South India,
+            <p className="text-lg leading-relaxed mb-8">
+              ⛰️ From the snow-capped peaks of the Himalayas to the 🏖️ sun-drenched coastlines of South India,
               every ride tells a story, every frame captures a moment, and every adventure pushes the boundaries
               of what's possible when passion meets purpose.
             </p>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 text-center">
+              <div className="bg-vibrant-blue-100 p-4 rounded-xl border-2 border-vibrant-blue-200 transform hover:scale-105 transition-all duration-200">
+                <div className="text-2xl font-bold text-vibrant-blue-700">2.5M+</div>
+                <div className="text-sm text-vibrant-blue-600">📺 Subscribers</div>
+              </div>
+              <div className="bg-vibrant-orange-100 p-4 rounded-xl border-2 border-vibrant-orange-200 transform hover:scale-105 transition-all duration-200">
+                <div className="text-2xl font-bold text-vibrant-orange-700">150+</div>
+                <div className="text-sm text-vibrant-orange-600">🗺️ Adventures</div>
+              </div>
+              <div className="bg-vibrant-lightBlue-100 p-4 rounded-xl border-2 border-vibrant-lightBlue-200 transform hover:scale-105 transition-all duration-200">
+                <div className="text-2xl font-bold text-vibrant-lightBlue-700">50K+</div>
+                <div className="text-sm text-vibrant-lightBlue-600">🏍️ KMs Traveled</div>
+              </div>
+              <div className="bg-green-100 p-4 rounded-xl border-2 border-green-200 transform hover:scale-105 transition-all duration-200">
+                <div className="text-2xl font-bold text-green-700">25+</div>
+                <div className="text-sm text-green-600">🌍 Countries</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
