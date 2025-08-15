@@ -69,18 +69,30 @@ export default function Index() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="bg-vibrant-orange-500 hover:bg-vibrant-orange-600 text-white px-8 py-4 text-lg shadow-xl border-2 border-white/20">
+            <Button
+              size="lg"
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg shadow-xl border-2 border-white/20 transform hover:scale-105 transition-all duration-200"
+              onClick={() => window.open('https://youtu.be/chZwdiY66vg?si=5AP79LVZnhXYkb6v', '_blank')}
+            >
               <PlayCircle className="mr-2 h-5 w-5" />
-              Watch Latest Adventure
+              🎥 Watch on YouTube
+            </Button>
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg shadow-xl border-2 border-white/20 transform hover:scale-105 transition-all duration-200"
+              onClick={() => window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank')}
+            >
+              <Camera className="mr-2 h-5 w-5" />
+              📸 Follow on Instagram
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-vibrant-blue-800 px-8 py-4 text-lg shadow-xl backdrop-blur-sm"
+              className="border-2 border-white text-white hover:bg-white hover:text-vibrant-blue-800 px-8 py-4 text-lg shadow-xl backdrop-blur-sm transform hover:scale-105 transition-all duration-200"
               asChild
             >
               <Link to="/about">
-                Discover My Story
+                🌟 Discover My Story
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
