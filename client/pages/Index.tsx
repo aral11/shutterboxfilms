@@ -111,8 +111,8 @@ export default function Index() {
       {/* Welcome Message Section */}
       <section className="py-16 bg-gradient-to-b from-vibrant-blue-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-vibrant-blue-800 mb-8 brand-display">
-            The Ride Begins
+          <h2 className="text-3xl sm:text-4xl font-bold text-vibrant-blue-800 mb-8 brand-display transform hover:scale-105 transition-transform duration-300">
+            🚀 The Ride Begins
           </h2>
           <div className="prose prose-lg mx-auto text-vibrant-blue-700">
             <p className="text-xl leading-relaxed mb-6">
