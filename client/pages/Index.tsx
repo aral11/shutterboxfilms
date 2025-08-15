@@ -247,15 +247,23 @@ export default function Index() {
       {/* Stats Section */}
       <section className="py-16 bg-vibrant-blue-700 text-white border-y-4 border-vibrant-orange-500">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 brand-display">🏆 Adventure Milestones</h2>
+            <p className="text-vibrant-blue-200">Numbers that tell the story of endless exploration</p>
+          </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-vibrant-orange-400 mb-2 drop-shadow-lg">
+              <div key={index} className="text-center transform hover:scale-110 transition-transform duration-300">
+                <div className="text-3xl sm:text-4xl font-bold text-vibrant-orange-400 mb-2 drop-shadow-lg animate-pulse">
                   {achievement.number}
                 </div>
                 <div className="text-vibrant-blue-200 text-sm sm:text-base font-medium">
                   {achievement.label}
                 </div>
+                {index === 0 && <div className="text-xs text-vibrant-orange-300 mt-1">🎬 And growing!</div>}
+                {index === 1 && <div className="text-xs text-vibrant-orange-300 mt-1">🗺️ Epic journeys</div>}
+                {index === 2 && <div className="text-xs text-vibrant-orange-300 mt-1">🏍️ Miles of memories</div>}
+                {index === 3 && <div className="text-xs text-vibrant-orange-300 mt-1">🌍 Cultures explored</div>}
               </div>
             ))}
           </div>
