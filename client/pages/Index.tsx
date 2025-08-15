@@ -275,11 +275,19 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-vibrant-blue-800 mb-4 brand-display">
-              Latest Adventures
+              🎥 Latest Adventures
             </h2>
             <p className="text-xl text-vibrant-blue-600 max-w-2xl mx-auto">
-              Dive into the most recent journeys, films, and stories from the road.
+              🗺️ Dive into the most recent journeys, 🎬 films, and 📖 stories from the road.
             </p>
+            <div className="mt-4">
+              <Button
+                className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-xl transform hover:scale-105 transition-all duration-200"
+                onClick={() => window.open('https://youtu.be/9yCNpiFdnrg?si=KbyH3Xar7qzllFNu', '_blank')}
+              >
+                🎬 Watch Latest Video
+              </Button>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
