@@ -31,11 +31,22 @@ export default function Layout({ children }: LayoutProps) {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
-              <div className="p-2 bg-vibrant-orange-500 rounded-xl shadow-lg border-2 border-white/20">
-                <Camera className="h-8 w-8 text-white" />
+              <div className="relative">
+                {/* Official Shutterbox Films Logo - Camera in viewfinder style */}
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-lg border-2 border-vibrant-blue-300">
+                  <div className="relative">
+                    {/* Outer frame */}
+                    <div className="w-8 h-8 border-2 border-black rounded-sm flex items-center justify-center">
+                      {/* Inner circle */}
+                      <div className="w-4 h-4 bg-black rounded-full flex items-center justify-center">
+                        <div className="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-white drop-shadow-sm">Shutterbox Films</h1>
+                <h1 className="text-2xl font-bold text-white drop-shadow-sm" style={{fontFamily: 'cursive'}}>Shutterbox Films</h1>
                 <p className="text-vibrant-orange-200 text-sm">The Journey of Sachin Shetty</p>
               </div>
             </Link>
@@ -114,11 +125,22 @@ export default function Layout({ children }: LayoutProps) {
             {/* Brand */}
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="p-2 bg-vibrant-orange-500 rounded-xl shadow-lg border-2 border-white/20">
-                  <Camera className="h-6 w-6 text-white" />
+                <div className="relative">
+                  {/* Official Shutterbox Films Logo - smaller version */}
+                  <div className="w-8 h-8 bg-white rounded-md flex items-center justify-center shadow-lg border border-vibrant-blue-300">
+                    <div className="relative">
+                      {/* Outer frame */}
+                      <div className="w-5 h-5 border border-black rounded-sm flex items-center justify-center">
+                        {/* Inner circle */}
+                        <div className="w-2.5 h-2.5 bg-black rounded-full flex items-center justify-center">
+                          <div className="w-1 h-1 bg-white rounded-full"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Shutterbox Films</h3>
+                  <h3 className="text-xl font-bold" style={{fontFamily: 'cursive'}}>Shutterbox Films</h3>
                   <p className="text-vibrant-orange-200 text-sm">The Journey of Sachin Shetty</p>
                 </div>
               </div>
