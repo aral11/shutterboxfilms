@@ -55,16 +55,16 @@ export default function Index() {
         {/* Hero Content */}
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <Badge className="bg-vibrant-orange-500 text-white mb-4 text-sm px-4 py-2 shadow-lg">
-              Welcome to Shutterbox Films
+            <Badge className="bg-vibrant-orange-500 text-white mb-4 text-sm px-4 py-2 shadow-lg border-2 border-white/20 rounded-xl animate-pulse">
+              🎬 Welcome to Shutterbox Films
             </Badge>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-              Exploring the World,
-              <span className="text-vibrant-orange-400 block" style={{fontFamily: 'cursive'}}>Frame by Frame</span>
+              Adventure Awaits,
+              <span className="text-vibrant-orange-400 block brand-script">Every Frame Tells a Story</span>
             </h1>
             <p className="text-xl sm:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
-              Join Sachin Shetty on an extraordinary journey across continents, capturing the beauty of adventure,
-              the thrill of the ride, and the stories that unfold along the way.
+              🏔️ From mountain peaks to forest trails, 🏍️ motorcycle adventures to 📸 cinematic storytelling -
+              Experience the world through Sachin Shetty's lens of endless exploration.
             </p>
           </div>
 
