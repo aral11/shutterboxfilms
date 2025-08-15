@@ -41,39 +41,42 @@ export default function Index() {
     <Layout>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background with overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-earth-brown-900 via-earth-brown-800 to-earth-green-900">
-          {/* Simulated video background with pattern */}
-          <div className="absolute inset-0 opacity-30">
-            <div className="w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-earth-orange-500/20 via-transparent to-transparent"></div>
-          </div>
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2F0014b6a0c63e4367a09df5c9693d0f77?format=webp&width=1920"
+            alt="Shutterbox Films Hero Background"
+            className="w-full h-full object-cover"
+          />
+          {/* Subtle overlay to ensure text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-vibrant-blue-900/30 via-transparent to-vibrant-blue-900/30"></div>
         </div>
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <Badge className="bg-earth-orange-500 text-white mb-4 text-sm px-4 py-2">
+            <Badge className="bg-vibrant-orange-500 text-white mb-4 text-sm px-4 py-2 shadow-lg">
               Welcome to Shutterbox Films
             </Badge>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
               Exploring the World,
-              <span className="text-earth-orange-400 block">Frame by Frame</span>
+              <span className="text-vibrant-orange-400 block">Frame by Frame</span>
             </h1>
-            <p className="text-xl sm:text-2xl text-earth-brown-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl sm:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
               Join Sachin Shetty on an extraordinary journey across continents, capturing the beauty of adventure,
               the thrill of the ride, and the stories that unfold along the way.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="bg-earth-orange-500 hover:bg-earth-orange-600 text-white px-8 py-4 text-lg">
+            <Button size="lg" className="bg-vibrant-orange-500 hover:bg-vibrant-orange-600 text-white px-8 py-4 text-lg shadow-xl border-2 border-white/20">
               <PlayCircle className="mr-2 h-5 w-5" />
               Watch Latest Adventure
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-white text-white hover:bg-white hover:text-earth-brown-800 px-8 py-4 text-lg"
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-2 border-white text-white hover:bg-white hover:text-vibrant-blue-800 px-8 py-4 text-lg shadow-xl backdrop-blur-sm"
               asChild
             >
               <Link to="/about">
@@ -86,8 +89,8 @@ export default function Index() {
           {/* Scroll indicator */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
             <div className="flex flex-col items-center">
-              <span className="text-sm mb-2">Scroll to explore</span>
-              <div className="w-px h-8 bg-white opacity-50"></div>
+              <span className="text-sm mb-2 drop-shadow">Scroll to explore</span>
+              <div className="w-px h-8 bg-white opacity-70"></div>
             </div>
           </div>
         </div>
