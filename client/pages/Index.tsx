@@ -264,6 +264,92 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Instagram Reels Section */}
+      <section className="py-16 bg-gradient-to-b from-white to-vibrant-blue-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-vibrant-blue-800 mb-4 brand-display">
+              🎬 Latest Reels & Adventures
+            </h2>
+            <p className="text-xl text-vibrant-blue-600 max-w-2xl mx-auto">
+              Catch the most exciting moments from recent adventures and behind-the-scenes content
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* Instagram Reel Embed */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 border-2 border-vibrant-blue-200">
+              <h3 className="text-xl font-bold text-vibrant-blue-800 mb-4 text-center">🔥 Latest Instagram Reel</h3>
+              <div className="aspect-[9/16] max-w-xs mx-auto">
+                <iframe
+                  src="https://www.instagram.com/reel/DE37viGNTEN/embed"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency
+                  className="rounded-xl"
+                ></iframe>
+              </div>
+              <div className="text-center mt-4">
+                <Button
+                  size="sm"
+                  className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-4 py-2 rounded-xl"
+                  onClick={() => window.open('https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==', '_blank')}
+                >
+                  🎥 Watch Latest Reel
+                </Button>
+              </div>
+            </div>
+
+            {/* YouTube Video */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 border-2 border-red-200">
+              <h3 className="text-xl font-bold text-red-600 mb-4 text-center">▶️ Latest YouTube Adventure</h3>
+              <div className="aspect-video">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/chZwdiY66vg"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="rounded-xl"
+                ></iframe>
+              </div>
+              <div className="text-center mt-4">
+                <Button
+                  size="sm"
+                  className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-xl"
+                  onClick={() => window.open('https://youtu.be/chZwdiY66vg?si=5AP79LVZnhXYkb6v', '_blank')}
+                >
+                  🎬 Watch Full Video
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                size="lg"
+                className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 shadow-xl transform hover:scale-105 transition-all duration-200 rounded-xl"
+                onClick={() => window.open('https://youtube.com/@shutterboxfilms?si=7h4wZmIo4g7rq_ii', '_blank')}
+              >
+                🎬 Subscribe to YouTube Channel
+              </Button>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 shadow-xl transform hover:scale-105 transition-all duration-200 rounded-xl"
+                onClick={() => window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank')}
+              >
+                📸 Follow on Instagram
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="py-16 bg-vibrant-blue-700 text-white border-y-4 border-vibrant-orange-500">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
