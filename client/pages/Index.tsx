@@ -97,19 +97,19 @@ export default function Index() {
       </section>
 
       {/* Welcome Message Section */}
-      <section className="py-16 bg-gradient-to-b from-earth-brown-50 to-white">
+      <section className="py-16 bg-gradient-to-b from-vibrant-blue-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-earth-brown-800 mb-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-vibrant-blue-800 mb-8">
             The Ride Begins
           </h2>
-          <div className="prose prose-lg mx-auto text-earth-brown-700">
+          <div className="prose prose-lg mx-auto text-vibrant-blue-700">
             <p className="text-xl leading-relaxed mb-6">
-              Welcome to my world of adventure, cinematography, and endless exploration. I'm Sachin Shetty, 
+              Welcome to my world of adventure, cinematography, and endless exploration. I'm Sachin Shetty,
               and for over a decade, I've been documenting journeys that span continents, cultures, and countless miles of open road.
             </p>
             <p className="text-lg leading-relaxed">
-              From the snow-capped peaks of the Himalayas to the sun-drenched coastlines of South India, 
-              every ride tells a story, every frame captures a moment, and every adventure pushes the boundaries 
+              From the snow-capped peaks of the Himalayas to the sun-drenched coastlines of South India,
+              every ride tells a story, every frame captures a moment, and every adventure pushes the boundaries
               of what's possible when passion meets purpose.
             </p>
           </div>
@@ -117,15 +117,15 @@ export default function Index() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-earth-brown-800 text-white">
+      <section className="py-16 bg-vibrant-blue-700 text-white border-y-4 border-vibrant-orange-500">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-earth-orange-400 mb-2">
+                <div className="text-3xl sm:text-4xl font-bold text-vibrant-orange-400 mb-2 drop-shadow-lg">
                   {achievement.number}
                 </div>
-                <div className="text-earth-brown-200 text-sm sm:text-base">
+                <div className="text-vibrant-blue-200 text-sm sm:text-base font-medium">
                   {achievement.label}
                 </div>
               </div>
@@ -135,38 +135,38 @@ export default function Index() {
       </section>
 
       {/* Featured Content */}
-      <section className="py-16 bg-gradient-to-b from-white to-earth-green-50">
+      <section className="py-16 bg-gradient-to-b from-white to-vibrant-lightBlue-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-earth-brown-800 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-vibrant-blue-800 mb-4">
               Latest Adventures
             </h2>
-            <p className="text-xl text-earth-brown-600 max-w-2xl mx-auto">
+            <p className="text-xl text-vibrant-blue-600 max-w-2xl mx-auto">
               Dive into the most recent journeys, films, and stories from the road.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredContent.map((content, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 border-earth-brown-200">
-                <div className="aspect-video bg-gradient-to-br from-earth-brown-200 to-earth-green-200 relative">
+              <Card key={index} className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-vibrant-blue-200 hover:scale-105 rounded-2xl">
+                <div className="aspect-video bg-gradient-to-br from-vibrant-blue-200 to-vibrant-lightBlue-200 relative">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    {content.type === "ride" && <Mountain className="h-16 w-16 text-earth-brown-500" />}
-                    {content.type === "film" && <Film className="h-16 w-16 text-earth-brown-500" />}
-                    {content.type === "blog" && <Camera className="h-16 w-16 text-earth-brown-500" />}
+                    {content.type === "ride" && <Mountain className="h-16 w-16 text-vibrant-blue-600" />}
+                    {content.type === "film" && <Film className="h-16 w-16 text-vibrant-blue-600" />}
+                    {content.type === "blog" && <Camera className="h-16 w-16 text-vibrant-blue-600" />}
                   </div>
-                  <Badge className="absolute top-3 left-3 bg-earth-orange-500 text-white">
+                  <Badge className="absolute top-3 left-3 bg-vibrant-orange-500 text-white shadow-lg border-2 border-white/30 rounded-xl">
                     {content.type.charAt(0).toUpperCase() + content.type.slice(1)}
                   </Badge>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-earth-brown-800 mb-3">
+                  <h3 className="text-xl font-bold text-vibrant-blue-800 mb-3">
                     {content.title}
                   </h3>
-                  <p className="text-earth-brown-600 mb-4 line-clamp-2">
+                  <p className="text-vibrant-blue-600 mb-4 line-clamp-2">
                     {content.description}
                   </p>
-                  <div className="flex items-center justify-between text-sm text-earth-brown-500 mb-4">
+                  <div className="flex items-center justify-between text-sm text-vibrant-blue-500 mb-4">
                     <div className="flex items-center space-x-4">
                       {Object.entries(content.stats).map(([key, value], idx) => (
                         <span key={idx} className="flex items-center space-x-1">
@@ -178,7 +178,7 @@ export default function Index() {
                       ))}
                     </div>
                   </div>
-                  <Button variant="outline" className="w-full border-earth-brown-300 text-earth-brown-700 hover:bg-earth-brown-50">
+                  <Button variant="outline" className="w-full border-vibrant-blue-300 text-vibrant-blue-700 hover:bg-vibrant-blue-50 rounded-xl border-2">
                     Learn More
                   </Button>
                 </CardContent>
@@ -189,25 +189,25 @@ export default function Index() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-earth-orange-500 text-white">
+      <section className="py-16 bg-vibrant-orange-500 text-white border-t-4 border-vibrant-blue-600">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 drop-shadow-lg">
             Ready to Join the Journey?
           </h2>
-          <p className="text-xl mb-8 text-earth-orange-100">
+          <p className="text-xl mb-8 text-vibrant-orange-100">
             Subscribe to follow along with the latest adventures, gear reviews, and behind-the-scenes content.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-white text-earth-orange-500 hover:bg-earth-orange-50 px-8 py-4"
+            <Button
+              size="lg"
+              className="bg-white text-vibrant-orange-500 hover:bg-vibrant-orange-50 px-8 py-4 shadow-xl border-2 border-vibrant-orange-300 rounded-xl font-bold"
             >
               Subscribe to YouTube
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-white text-white hover:bg-white hover:text-earth-orange-500 px-8 py-4"
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-2 border-white text-white hover:bg-white hover:text-vibrant-orange-500 px-8 py-4 shadow-xl rounded-xl font-bold"
               asChild
             >
               <Link to="/community">Join Community</Link>
