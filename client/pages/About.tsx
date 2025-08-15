@@ -101,7 +101,7 @@ export default function About() {
               <Badge className="bg-vibrant-orange-500 text-white mb-4 shadow-lg border-2 border-white/20 rounded-xl">
                 The Man Behind the Lens
               </Badge>
-              <h1 className="text-4xl sm:text-5xl font-bold mb-6 drop-shadow-lg">
+              <h1 className="text-4xl sm:text-5xl font-bold mb-6 drop-shadow-lg" style={{fontFamily: 'cursive'}}>
                 Meet Sachin Shetty
               </h1>
               <p className="text-xl text-vibrant-blue-100 mb-8 leading-relaxed">
@@ -124,8 +124,15 @@ export default function About() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-80 h-80 bg-vibrant-orange-500 rounded-full flex items-center justify-center shadow-2xl border-4 border-white/20">
-                <Camera className="h-32 w-32 text-white drop-shadow-lg" />
+              <div className="w-80 h-80 bg-white rounded-full flex items-center justify-center shadow-2xl border-4 border-vibrant-orange-400">
+                {/* Large Official Shutterbox Films Logo */}
+                <div className="relative">
+                  <div className="w-32 h-32 border-8 border-black rounded-lg flex items-center justify-center">
+                    <div className="w-20 h-20 bg-black rounded-full flex items-center justify-center">
+                      <div className="w-10 h-10 bg-white rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
