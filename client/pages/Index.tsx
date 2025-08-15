@@ -128,6 +128,122 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Photo Gallery Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-vibrant-blue-800 mb-4 brand-display">
+              🌍 Adventures in Every Frame
+            </h2>
+            <p className="text-xl text-vibrant-blue-600 max-w-2xl mx-auto">
+              From tropical beaches to snowy mountains, every adventure brings new stories to life
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Portrait Photo */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2Fd678bf8037904c0f8bc01755fd1c7333?format=webp&width=600"
+                alt="Sachin Shetty Portrait"
+                className="w-full h-80 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-lg font-bold">🌴 Tropical Vibes</h3>
+                  <p className="text-sm">Style meets adventure</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Camping Adventure */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2F755c843cb17f476d971a5c47ba580a10?format=webp&width=600"
+                alt="Camping Adventure"
+                className="w-full h-80 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-lg font-bold">🏕️ Wilderness Camping</h3>
+                  <p className="text-sm">Off-road adventures</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Motorcycle Adventure */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2F1b1ef2b9e59d42f8a39f1a3ded4f41bc?format=webp&width=600"
+                alt="Forest Motorcycle Adventure"
+                className="w-full h-80 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-lg font-bold">🏍️ Forest Trails</h3>
+                  <p className="text-sm">Deep wilderness exploration</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Road Adventure */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2F0bbf7a8d2a02434ebb52bf75d6b88c5e?format=webp&width=600"
+                alt="Adventure Touring"
+                className="w-full h-80 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-lg font-bold">🛣️ Epic Journeys</h3>
+                  <p className="text-sm">Miles of open road</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Fun Character */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2F85e02b6c13464d67a678a8971cd7e39f?format=webp&width=600"
+                alt="Fun Character Adventures"
+                className="w-full h-80 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-lg font-bold">🎭 Creative Content</h3>
+                  <p className="text-sm">Bringing characters to life</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Mountain Adventure (smaller size to fit) */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff852809020e04a21be00df828dab13d1%2Fbfe54d7d91b748dfbe2b06f5b946fc17?format=webp&width=600"
+                alt="Mountain Winter Adventure"
+                className="w-full h-80 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-lg font-bold">❄️ Mountain Peaks</h3>
+                  <p className="text-sm">High altitude adventures</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg shadow-xl transform hover:scale-105 transition-all duration-200"
+              onClick={() => window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank')}
+            >
+              📱 See More Adventures on Instagram
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="py-16 bg-vibrant-blue-700 text-white border-y-4 border-vibrant-orange-500">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
