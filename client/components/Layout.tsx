@@ -26,32 +26,32 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="bg-earth-brown-800 text-white shadow-lg">
+      <header className="bg-vibrant-blue-700 text-white shadow-xl border-b-4 border-vibrant-orange-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
-              <div className="p-2 bg-earth-orange-500 rounded-lg">
+              <div className="p-2 bg-vibrant-orange-500 rounded-xl shadow-lg border-2 border-white/20">
                 <Camera className="h-8 w-8 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-white">Shutterbox Films</h1>
-                <p className="text-earth-orange-200 text-sm">The Journey of Sachin Shetty</p>
+                <h1 className="text-2xl font-bold text-white drop-shadow-sm">Shutterbox Films</h1>
+                <p className="text-vibrant-orange-200 text-sm">The Journey of Sachin Shetty</p>
               </div>
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-1">
+            <nav className="hidden md:flex space-x-2">
               {navigation.map((item) => {
                 const Icon = item.icon;
                 return (
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    className={`flex items-center space-x-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
                       isActive(item.href)
-                        ? "bg-earth-orange-500 text-white"
-                        : "text-earth-orange-100 hover:bg-earth-brown-700 hover:text-white"
+                        ? "bg-vibrant-orange-500 text-white shadow-lg scale-105 border-2 border-white/20"
+                        : "text-vibrant-orange-100 hover:bg-vibrant-blue-600 hover:text-white hover:scale-105 border-2 border-transparent"
                     }`}
                   >
                     <Icon className="h-4 w-4" />
@@ -65,7 +65,7 @@ export default function Layout({ children }: LayoutProps) {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden text-white hover:bg-earth-brown-700"
+              className="md:hidden text-white hover:bg-vibrant-blue-600 rounded-xl border-2 border-white/20"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? (
@@ -86,10 +86,10 @@ export default function Layout({ children }: LayoutProps) {
                     <Link
                       key={item.name}
                       to={item.href}
-                      className={`flex items-center space-x-2 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
+                      className={`flex items-center space-x-2 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
                         isActive(item.href)
-                          ? "bg-earth-orange-500 text-white"
-                          : "text-earth-orange-100 hover:bg-earth-brown-700 hover:text-white"
+                          ? "bg-vibrant-orange-500 text-white shadow-lg border-2 border-white/20"
+                          : "text-vibrant-orange-100 hover:bg-vibrant-blue-600 hover:text-white border-2 border-transparent"
                       }`}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
@@ -108,31 +108,31 @@ export default function Layout({ children }: LayoutProps) {
       <main>{children}</main>
 
       {/* Footer */}
-      <footer className="bg-earth-brown-900 text-white">
+      <footer className="bg-vibrant-blue-800 text-white border-t-4 border-vibrant-orange-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Brand */}
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="p-2 bg-earth-orange-500 rounded-lg">
+                <div className="p-2 bg-vibrant-orange-500 rounded-xl shadow-lg border-2 border-white/20">
                   <Camera className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Shutterbox Films</h3>
-                  <p className="text-earth-orange-200 text-sm">The Journey of Sachin Shetty</p>
+                  <p className="text-vibrant-orange-200 text-sm">The Journey of Sachin Shetty</p>
                 </div>
               </div>
-              <p className="text-earth-brown-200 mb-4">
+              <p className="text-vibrant-blue-200 mb-4">
                 Exploring the world through the lens of adventure, capturing the beauty of life on two wheels and beyond.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-earth-orange-300 hover:text-earth-orange-500 transition-colors">
+                <a href="#" className="text-vibrant-orange-300 hover:text-vibrant-orange-500 transition-colors font-medium">
                   YouTube
                 </a>
-                <a href="#" className="text-earth-orange-300 hover:text-earth-orange-500 transition-colors">
+                <a href="#" className="text-vibrant-orange-300 hover:text-vibrant-orange-500 transition-colors font-medium">
                   Instagram
                 </a>
-                <a href="#" className="text-earth-orange-300 hover:text-earth-orange-500 transition-colors">
+                <a href="#" className="text-vibrant-orange-300 hover:text-vibrant-orange-500 transition-colors font-medium">
                   Facebook
                 </a>
               </div>
@@ -146,7 +146,7 @@ export default function Layout({ children }: LayoutProps) {
                   <li key={item.name}>
                     <Link
                       to={item.href}
-                      className="text-earth-brown-200 hover:text-earth-orange-300 transition-colors"
+                      className="text-vibrant-blue-200 hover:text-vibrant-orange-300 transition-colors font-medium"
                     >
                       {item.name}
                     </Link>
@@ -163,7 +163,7 @@ export default function Layout({ children }: LayoutProps) {
                   <li key={item.name}>
                     <Link
                       to={item.href}
-                      className="text-earth-brown-200 hover:text-earth-orange-300 transition-colors"
+                      className="text-vibrant-blue-200 hover:text-vibrant-orange-300 transition-colors font-medium"
                     >
                       {item.name}
                     </Link>
@@ -173,8 +173,8 @@ export default function Layout({ children }: LayoutProps) {
             </div>
           </div>
 
-          <div className="border-t border-earth-brown-700 mt-8 pt-8 text-center">
-            <p className="text-earth-brown-300">
+          <div className="border-t border-vibrant-blue-600 mt-8 pt-8 text-center">
+            <p className="text-vibrant-blue-300">
               © 2024 Shutterbox Films. All rights reserved. | Exploring the World, Frame by Frame.
             </p>
           </div>
