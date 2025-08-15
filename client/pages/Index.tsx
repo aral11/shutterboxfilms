@@ -63,7 +63,7 @@ export default function Index() {
               <span className="text-vibrant-orange-400 block brand-script">Every Frame Tells a Story</span>
             </h1>
             <p className="text-xl sm:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
-              🏔️ From mountain peaks to forest trails, 🏍️ motorcycle adventures to 📸 cinematic storytelling -
+              🏔️ From mountain peaks to forest trails, ����️ motorcycle adventures to 📸 cinematic storytelling -
               Experience the world through Sachin Shetty's lens of endless exploration.
             </p>
           </div>
@@ -342,7 +342,7 @@ export default function Index() {
                 className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 shadow-xl transform hover:scale-105 transition-all duration-200 rounded-xl"
                 onClick={() => window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank')}
               >
-                📸 Follow on Instagram
+                �� Follow on Instagram
               </Button>
             </div>
           </div>
@@ -397,7 +397,19 @@ export default function Index() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredContent.map((content, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-vibrant-blue-200 hover:scale-105 hover:rotate-1 rounded-2xl cursor-pointer transform">
+              <Card
+                key={index}
+                className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-vibrant-blue-200 hover:scale-105 hover:rotate-1 rounded-2xl cursor-pointer transform"
+                onClick={() => {
+                  if (content.type === "ride") {
+                    window.open('https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==', '_blank');
+                  } else if (content.type === "film") {
+                    window.open('https://youtu.be/chZwdiY66vg?si=5AP79LVZnhXYkb6v', '_blank');
+                  } else {
+                    window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank');
+                  }
+                }}
+              >
                 <div className="aspect-video bg-gradient-to-br from-vibrant-blue-200 to-vibrant-lightBlue-200 relative group">
                   <div className="absolute inset-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                     {content.type === "ride" && <Mountain className="h-16 w-16 text-vibrant-blue-600" />}
@@ -407,7 +419,12 @@ export default function Index() {
                   <Badge className="absolute top-3 left-3 bg-vibrant-orange-500 text-white shadow-lg border-2 border-white/30 rounded-xl animate-bounce">
                     {content.type === "ride" && "🏍️"} {content.type === "film" && "🎬"} {content.type === "blog" && "📝"} {content.type.charAt(0).toUpperCase() + content.type.slice(1)}
                   </Badge>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-white text-center">
+                      <PlayCircle className="h-12 w-12 mx-auto mb-2" />
+                      <p className="font-bold">Click to {content.type === "ride" ? "Watch Reel" : content.type === "film" ? "Watch Video" : "View More"}</p>
+                    </div>
+                  </div>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-vibrant-blue-800 mb-3">
