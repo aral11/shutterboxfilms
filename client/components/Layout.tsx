@@ -148,14 +148,29 @@ export default function Layout({ children }: LayoutProps) {
                 Exploring the world through the lens of adventure, capturing the beauty of life on two wheels and beyond.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-vibrant-orange-300 hover:text-vibrant-orange-500 transition-colors font-medium">
-                  YouTube
+                <a
+                  href="https://youtube.com/@shutterboxfilms?si=7h4wZmIo4g7rq_ii"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-vibrant-orange-300 hover:text-vibrant-orange-500 transition-colors font-medium flex items-center space-x-1"
+                >
+                  <span>🎬</span><span>YouTube</span>
                 </a>
-                <a href="#" className="text-vibrant-orange-300 hover:text-vibrant-orange-500 transition-colors font-medium">
-                  Instagram
+                <a
+                  href="https://www.instagram.com/shutterboxfilms_official/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-vibrant-orange-300 hover:text-vibrant-orange-500 transition-colors font-medium flex items-center space-x-1"
+                >
+                  <span>📸</span><span>Instagram</span>
                 </a>
-                <a href="#" className="text-vibrant-orange-300 hover:text-vibrant-orange-500 transition-colors font-medium">
-                  Facebook
+                <a
+                  href="https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-vibrant-orange-300 hover:text-vibrant-orange-500 transition-colors font-medium flex items-center space-x-1"
+                >
+                  <span>🎥</span><span>Latest Reel</span>
                 </a>
               </div>
             </div>
