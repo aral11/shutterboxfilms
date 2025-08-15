@@ -101,8 +101,8 @@ export default function Index() {
           {/* Scroll indicator */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
             <div className="flex flex-col items-center">
-              <span className="text-sm mb-2 drop-shadow">Scroll to explore</span>
-              <div className="w-px h-8 bg-white opacity-70"></div>
+              <span className="text-sm mb-2 drop-shadow">⬇️ Scroll to explore amazing adventures</span>
+              <div className="w-px h-8 bg-white opacity-70 animate-pulse"></div>
             </div>
           </div>
         </div>
