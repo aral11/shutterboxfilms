@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Google Fonts for Shutterbox Films branding */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fredoka+One&display=swap');
+
 @layer base {
   /**
    * Tailwind CSS theme
@@ -133,5 +136,14 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Custom brand font classes */
+  .brand-script {
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .brand-display {
+    font-family: 'Fredoka One', cursive;
   }
 }
