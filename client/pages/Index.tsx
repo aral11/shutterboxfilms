@@ -365,10 +365,10 @@ export default function Index() {
                 <div className="text-vibrant-blue-200 text-sm sm:text-base font-medium">
                   {achievement.label}
                 </div>
-                {index === 0 && <div className="text-xs text-vibrant-orange-300 mt-1">🎬 And growing!</div>}
-                {index === 1 && <div className="text-xs text-vibrant-orange-300 mt-1">🗺️ Epic journeys</div>}
-                {index === 2 && <div className="text-xs text-vibrant-orange-300 mt-1">🏍️ Miles of memories</div>}
-                {index === 3 && <div className="text-xs text-vibrant-orange-300 mt-1">🌍 Cultures explored</div>}
+                {index === 0 && <div className="text-sm text-vibrant-orange-200 mt-1 font-medium">🎬 And growing!</div>}
+                {index === 1 && <div className="text-sm text-vibrant-orange-200 mt-1 font-medium">🗺️ Epic journeys</div>}
+                {index === 2 && <div className="text-sm text-vibrant-orange-200 mt-1 font-medium">🏍️ Miles of memories</div>}
+                {index === 3 && <div className="text-sm text-vibrant-orange-200 mt-1 font-medium">🌍 Cultures explored</div>}
               </div>
             ))}
           </div>
