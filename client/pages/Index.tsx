@@ -320,25 +320,33 @@ export default function Index() {
       <section className="py-16 bg-vibrant-orange-500 text-white border-t-4 border-vibrant-blue-600">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 drop-shadow-lg brand-display">
-            Ready to Join the Journey?
+            🚀 Ready to Join the Journey?
           </h2>
           <p className="text-xl mb-8 text-vibrant-orange-100">
-            Subscribe to follow along with the latest adventures, gear reviews, and behind-the-scenes content.
+            🔔 Subscribe for epic adventures, 🛠️ gear reviews, and 🎬 behind-the-scenes content from every ride!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-white text-vibrant-orange-500 hover:bg-vibrant-orange-50 px-8 py-4 shadow-xl border-2 border-vibrant-orange-300 rounded-xl font-bold"
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 shadow-xl border-2 border-white/20 rounded-xl font-bold transform hover:scale-105 transition-all duration-200"
+              onClick={() => window.open('https://youtube.com/@shutterboxfilms?si=7h4wZmIo4g7rq_ii', '_blank')}
             >
-              Subscribe to YouTube
+              🎬 Subscribe on YouTube
+            </Button>
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 shadow-xl border-2 border-white/20 rounded-xl font-bold transform hover:scale-105 transition-all duration-200"
+              onClick={() => window.open('https://www.instagram.com/shutterboxfilms_official/', '_blank')}
+            >
+              📸 Follow on Instagram
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-vibrant-orange-500 px-8 py-4 shadow-xl rounded-xl font-bold"
-              asChild
+              className="border-2 border-white text-white hover:bg-white hover:text-vibrant-orange-500 px-8 py-4 shadow-xl rounded-xl font-bold transform hover:scale-105 transition-all duration-200"
+              onClick={() => window.open('https://www.instagram.com/reel/DE37viGNTEN/?igsh=MXMzN2R1d3lrZXQ2Mg==', '_blank')}
             >
-              <Link to="/community">Join Community</Link>
+              🎥 Watch Latest Reel
             </Button>
           </div>
         </div>
