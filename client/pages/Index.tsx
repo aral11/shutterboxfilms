@@ -127,11 +127,11 @@ export default function Index() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 text-center">
               <div className="bg-vibrant-blue-100 p-4 rounded-xl border-2 border-vibrant-blue-200 transform hover:scale-105 transition-all duration-200">
-                <div className="text-2xl font-bold text-vibrant-blue-700">2.5M+</div>
+                <div className="text-2xl font-bold text-vibrant-blue-700">234K+</div>
                 <div className="text-sm text-vibrant-blue-600">📺 Subscribers</div>
               </div>
               <div className="bg-vibrant-orange-100 p-4 rounded-xl border-2 border-vibrant-orange-200 transform hover:scale-105 transition-all duration-200">
-                <div className="text-2xl font-bold text-vibrant-orange-700">150+</div>
+                <div className="text-2xl font-bold text-vibrant-orange-700">20+</div>
                 <div className="text-sm text-vibrant-orange-600">🗺️ Adventures</div>
               </div>
               <div className="bg-vibrant-lightBlue-100 p-4 rounded-xl border-2 border-vibrant-lightBlue-200 transform hover:scale-105 transition-all duration-200">
@@ -139,7 +139,7 @@ export default function Index() {
                 <div className="text-sm text-vibrant-lightBlue-600">🏍️ KMs Traveled</div>
               </div>
               <div className="bg-green-100 p-4 rounded-xl border-2 border-green-200 transform hover:scale-105 transition-all duration-200">
-                <div className="text-2xl font-bold text-green-700">25+</div>
+                <div className="text-2xl font-bold text-green-700">15+</div>
                 <div className="text-sm text-green-600">🌍 Countries</div>
               </div>
             </div>
